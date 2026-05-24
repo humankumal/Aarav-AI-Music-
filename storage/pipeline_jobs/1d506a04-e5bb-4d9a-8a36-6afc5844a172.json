@@ -1,0 +1,150 @@
+{
+  "job_id": "1d506a04-e5bb-4d9a-8a36-6afc5844a172",
+  "artist_id": "aarav",
+  "status": "completed_phase1",
+  "current_step": "awaiting_media_generation",
+  "steps": {
+    "lyrics": {
+      "job_id": "1d506a04-e5bb-4d9a-8a36-6afc5844a172",
+      "agent_name": "LyricsAgent",
+      "artist_id": "aarav",
+      "status": "completed",
+      "result_payload": {
+        "lyrics_text": "[VERSE 1]\nKhidki ke sheeshe pe barish ki lakeeren,\nTere jaane ke baad aayi hain ye rateein.\nCigarette ki raakh, khali pyaala chai,\nMain hun, meri tanhai hai, aur kuch nahi.\n\n[PRE-CHORUS]\nKuch alfaaz the jo kehne the tujhko,\nAb woh alfaaz bhi mujhse chhoot gaye...\n\n[CHORUS]\nBarsaat mein kho gaya tera khayal,\nPhir bhi bheeg raha hun, phir bhi.\nRaat ka ye sukoon, ye dard ka jaal,\nPhir bhi jeeta hun, phir bhi.\n\n[VERSE 2]\nPhone ki screen pe teri photos hain,\nDelete karna chahta hun, par haath ruk jaate hain.\nTeri mehk abhi tak mere kamre mein hai,\nKaise bataaun, main kahan hun abhi.\n\n[PRE-CHORUS]\nKuch alfaaz the jo kehne the tujhko,\nAb woh alfaaz bhi mujhse chhoot gaye...\n\n[CHORUS]\nBarsaat mein kho gaya tera khayal,\nPhir bhi bheeg raha hun, phir bhi.\nRaat ka ye sukoon, ye dard ka jaal,\nPhir bhi jeeta hun, phir bhi.\n\n[BRIDGE]\nSubah hogi, main jaanta hun.\nPar abhi raat hai, aur tu nahi.\nBas itna hi kafi hai dard ke liye.\nBas itna hi.\n\n[FINAL CHORUS]\nBarsaat mein kho gaya tera khayal,\nPhir bhi bheeg raha hun, phir bhi.\nRaat ka ye sukoon, ye dard ka jaal,\nPhir bhi jeeta hun... phir bhi.\n\n[OUTRO]\nBarsaat rukegi kabhi na kabhi.\nMagar tu... tu nahi aayega.",
+        "hook_line": "Barsaat mein kho gaya tera khayal",
+        "suggested_titles": [
+          "Barsaat Mein Kho Gaya",
+          "Phir Bhi",
+          "Raat Ka Sukoon"
+        ],
+        "mood_tags": [
+          "melancholic",
+          "midnight",
+          "rain",
+          "heartbreak",
+          "cinematic"
+        ],
+        "estimated_duration_seconds": 215,
+        "language_detected": "hinglish",
+        "theme": "midnight_loneliness",
+        "song_type": "full_song"
+      },
+      "error": null,
+      "duration_seconds": 0.00015953100000842824,
+      "metadata": {},
+      "completed_at": "2026-05-24T13:26:07.518283+00:00"
+    },
+    "music_prompt": {
+      "job_id": "1d506a04-e5bb-4d9a-8a36-6afc5844a172",
+      "agent_name": "MusicPromptAgent",
+      "artist_id": "aarav",
+      "status": "completed",
+      "result_payload": {
+        "suno_prompt": "[dark cinematic bollywood, emotional hindi pop, lo-fi midnight, ambient trap soul] [male vocal, warm raspy voice, emotional delivery, intimate, breathy] [sparse piano, acoustic guitar, deep bass, string swells, vinyl texture] [mood: melancholic, midnight, rain, heartbreak] [key: D minor] [65-80 BPM] [emotional, cinematic, commercially modern]",
+        "udio_prompt": "Genre: dark cinematic bollywood, emotional hindi pop, lo-fi midnight, ambient trap soul. Vocals: male vocal, warm raspy voice, emotional delivery, intimate, breathy. Instrumentation: sparse piano, acoustic guitar, deep bass, string swells, vinyl texture. Mood: melancholic, midnight, rain, heartbreak. Key: D minor. Tempo: 65-80 BPM. Production quality: professional, emotionally resonant, cinematic.",
+        "negative_prompt": "no autotune robotics, no harsh distortion, no comedy tone, no upbeat club music, no explicit content, no EDM drops, no plagiarized melody from existing copyrighted songs",
+        "production_notes": {
+          "bpm_range": [
+            65,
+            80
+          ],
+          "key": "D minor",
+          "mood_tags": [
+            "melancholic",
+            "midnight",
+            "rain",
+            "heartbreak",
+            "cinematic"
+          ],
+          "instrumentation": "sparse piano, acoustic guitar, deep bass, string swells, vinyl texture"
+        },
+        "expected_genre_tags": [
+          "dark cinematic bollywood",
+          "emotional hindi pop",
+          "lo-fi midnight",
+          "ambient trap soul"
+        ],
+        "platform_target": "suno"
+      },
+      "error": null,
+      "duration_seconds": 6.981500018810038e-05,
+      "metadata": {},
+      "completed_at": "2026-05-24T13:26:07.518367+00:00"
+    },
+    "metadata": {
+      "job_id": "1d506a04-e5bb-4d9a-8a36-6afc5844a172",
+      "agent_name": "MetadataAgent",
+      "artist_id": "aarav",
+      "status": "completed",
+      "result_payload": {
+        "title": "Dard | Barsaat Mein Kho Gaya | Aarav AI Music | Hindi Melancholic Song 2026",
+        "description": "Barsaat mein kho gaya tera khayal\n\nA new emotional journey from Aarav AI Music. 'Barsaat Mein Kho Gaya' is a cinematic hinglish song that touches the deepest corners of the heart.\n\nStream and experience the emotion \u2193\n\n0:00 Intro\n0:20 Verse\n1:05 Chorus\n1:50 Verse 2\n2:30 Chorus\n3:00 Outro\n\n\ud83d\udd14 Subscribe: \n\ud83c\udfb5 Spotify: Coming Soon\n\ud83d\udcf8 Instagram: https://instagram.com/aarav.ai.music\n\ud83c\udfb5 TikTok: https://tiktok.com/@AaravAIMusic\n\n\ud83e\udd16 This song is created using AI music generation tools. All creative direction, lyrics, emotional storytelling, and production guidance are curated by the Aarav AI Music team. #AIMusic #ArtificialIntelligence\n\n#AaravAIMusic #AaravAI #HindiAIMusic #HindiSadSong #BollywoodSad #EmotionalHindi #CinematicHindi #Heartbreak #LonelySong #MidnightVibes #RainSong #AIMusic #AIGenerated #ArtificialIntelligenceMusic #HindiMusic #IndianMusic #Bollywood #SadSong2026",
+        "tags": [
+          "aarav ai music",
+          "hindi sad song",
+          "ai music",
+          "emotional hindi song",
+          "hindi heartbreak song",
+          "cinematic hindi music",
+          "midnight song hindi",
+          "sad song 2026",
+          "hindi lo-fi",
+          "ai generated music hindi",
+          "barsaat mein kho gaya",
+          "barsaat mein kho gaya aarav ai music",
+          "new hindi song 2026",
+          "hindi melancholic song",
+          "hindi midnight song",
+          "hindi rain song",
+          "dark cinematic bollywood",
+          "emotional hindi pop",
+          "lo-fi midnight"
+        ],
+        "hashtags": [
+          "#AaravAIMusic",
+          "#AaravAI",
+          "#HindiAIMusic",
+          "#HindiSadSong",
+          "#BollywoodSad",
+          "#EmotionalHindi",
+          "#CinematicHindi",
+          "#Heartbreak",
+          "#LonelySong",
+          "#MidnightVibes",
+          "#RainSong",
+          "#AIMusic",
+          "#AIGenerated",
+          "#ArtificialIntelligenceMusic",
+          "#HindiMusic",
+          "#IndianMusic",
+          "#Bollywood",
+          "#SadSong2026"
+        ],
+        "youtube_chapters": "0:00 Intro\n0:20 Verse\n1:05 Chorus\n1:50 Verse 2\n2:30 Chorus\n3:00 Outro",
+        "thumbnail_text": "Barsaat Mein Kho Gaya",
+        "platform_target": "youtube",
+        "language": "hinglish",
+        "spotify_metadata": {
+          "track_title": "Barsaat Mein Kho Gaya",
+          "artist": "Aarav AI Music",
+          "genre": "dark cinematic bollywood",
+          "mood_tags": [
+            "melancholic",
+            "midnight",
+            "rain"
+          ],
+          "language": "hinglish",
+          "explicit": false
+        },
+        "seo_score": 80
+      },
+      "error": null,
+      "duration_seconds": 9.401700003763835e-05,
+      "metadata": {},
+      "completed_at": "2026-05-24T13:26:07.518470+00:00"
+    }
+  },
+  "error_log": [],
+  "started_at": "2026-05-24T13:26:07.517727+00:00",
+  "completed_at": "2026-05-24T13:26:07.518475+00:00"
+}
