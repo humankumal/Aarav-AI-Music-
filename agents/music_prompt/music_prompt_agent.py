@@ -1,4 +1,4 @@
-"""Music Prompt Agent — generates optimized prompts for Suno and Udio AI music generation."""
+"""Music Prompt Agent — generates optimized prompts for Google Lyria (Vertex AI)."""
 
 import json
 import re
@@ -9,18 +9,20 @@ from agents.base_agent import BaseAgent
 
 PROMPTS_DIR = Path(__file__).parent / "prompts"
 
-SUNO_STYLE_MAP = {
+# Natural-language style profiles for Google Lyria.
+# Lyria expects descriptive prose, not bracket-style tags.
+LYRIA_STYLE_MAP = {
     "aarav": {
-        "base_style_tags": "dark cinematic bollywood, emotional hindi pop, lo-fi midnight, ambient trap soul",
-        "vocal_tags": "male vocal, warm raspy voice, emotional delivery, intimate, breathy",
-        "production_tags": "sparse piano, acoustic guitar, deep bass, string swells, vinyl texture",
-        "mood_tags": "melancholic, heartbreak, cinematic, introspective",
+        "genre": "dark cinematic Bollywood, emotional Hindi pop, lo-fi midnight, ambient trap soul",
+        "vocals": "warm raspy male voice, intimate emotional delivery, breathy and expressive, realistic imperfections",
+        "instrumentation": "sparse piano, fingerpicked acoustic guitar, deep 808 bass, orchestral string swells, vinyl crackle texture, atmospheric synth pads",
+        "mood": "melancholic, heartbreak, cinematic, introspective, late-night",
     },
     "aarohi": {
-        "base_style_tags": "spiritual folk pop, cinematic hindi female, ambient devotional, dream pop",
-        "vocal_tags": "female vocal, airy ethereal voice, emotional whisper, expressive chorus",
-        "production_tags": "fingerpicked guitar, soft piano, bansuri flute, orchestral strings, ambient pads",
-        "mood_tags": "longing, healing, spiritual, ethereal, golden",
+        "genre": "spiritual folk pop, cinematic Hindi female vocal, ambient devotional, dream pop, world music fusion",
+        "vocals": "airy ethereal female voice, emotional whisper to soar, expressive chorus, dreamy layered vocals",
+        "instrumentation": "delicate fingerpicked guitar, ethereal piano, bansuri flute, soft orchestral strings, ambient pads, light percussive heartbeats",
+        "mood": "longing, healing, spiritual, ethereal, golden, transcendent",
     },
 }
 
@@ -64,11 +66,11 @@ class MusicPromptAgent(BaseAgent):
         hook_line = lyrics_output.get("hook_line", "")
         lyrics_text = lyrics_output.get("lyrics_text", "")
         genre_preference = context.get("genre_preference", "")
-        platform_target = context.get("platform_target", "suno")
+        platform_target = context.get("platform_target", "lyria")
 
         bpm_range = self._derive_bpm(mood_tags)
         key = self._derive_key(mood_tags, artist_config)
-        style_profile = SUNO_STYLE_MAP.get(artist_id, SUNO_STYLE_MAP["aarav"])
+        style_profile = LYRIA_STYLE_MAP.get(artist_id, LYRIA_STYLE_MAP["aarav"])
 
         if self._gemini and lyrics_text:
             prompts = self._generate_via_gemini(
@@ -94,14 +96,13 @@ class MusicPromptAgent(BaseAgent):
             )
 
         return {
-            "suno_prompt": prompts["suno_prompt"],
-            "udio_prompt": prompts["udio_prompt"],
+            "lyria_prompt": prompts["lyria_prompt"],
             "negative_prompt": prompts["negative_prompt"],
             "production_notes": {
                 "bpm_range": bpm_range,
                 "key": key,
                 "mood_tags": mood_tags,
-                "instrumentation": style_profile["production_tags"],
+                "instrumentation": style_profile["instrumentation"],
             },
             "expected_genre_tags": self._extract_genre_tags(style_profile, genre_preference),
             "platform_target": platform_target,
@@ -135,25 +136,18 @@ class MusicPromptAgent(BaseAgent):
         genre_preference: str,
     ) -> dict[str, str]:
         mood_str = ", ".join(mood_tags[:4]) if mood_tags else "melancholic, cinematic"
-        bpm_str = f"{bpm_range[0]}-{bpm_range[1]} BPM"
-
+        bpm_mid = (bpm_range[0] + bpm_range[1]) // 2
         genre_extra = f", {genre_preference}" if genre_preference else ""
 
-        suno_prompt = (
-            f"[{style_profile['base_style_tags']}{genre_extra}] "
-            f"[{style_profile['vocal_tags']}] "
-            f"[{style_profile['production_tags']}] "
-            f"[mood: {mood_str}] "
-            f"[key: {key}] [{bpm_str}] "
-            f"[emotional, cinematic, commercially modern]"
-        )
-
-        udio_prompt = (
-            f"Genre: {style_profile['base_style_tags']}{genre_extra}. "
-            f"Vocals: {style_profile['vocal_tags']}. "
-            f"Instrumentation: {style_profile['production_tags']}. "
-            f"Mood: {mood_str}. Key: {key}. Tempo: {bpm_str}. "
-            f"Production quality: professional, emotionally resonant, cinematic."
+        # Google Lyria expects natural language, not bracket tags
+        lyria_prompt = (
+            f"Genre: {style_profile['genre']}{genre_extra}. "
+            f"Vocals: {style_profile['vocals']}. "
+            f"Instrumentation: {style_profile['instrumentation']}. "
+            f"Mood: {mood_str}. "
+            f"Key: {key}. Tempo: approximately {bpm_mid} BPM. "
+            f"Production quality: professional, emotionally resonant, cinematic, "
+            f"commercially modern Hindi music."
         )
 
         negative_prompt = (
@@ -163,8 +157,7 @@ class MusicPromptAgent(BaseAgent):
         )
 
         return {
-            "suno_prompt": suno_prompt,
-            "udio_prompt": udio_prompt,
+            "lyria_prompt": lyria_prompt,
             "negative_prompt": negative_prompt,
         }
 
@@ -187,16 +180,18 @@ class MusicPromptAgent(BaseAgent):
         )
         instru_str = ", ".join(instrumentation[:5])
 
-        user_prompt = f"""Based on these song lyrics, generate optimized AI music generation prompts.
+        bpm_mid = (bpm_range[0] + bpm_range[1]) // 2
+
+        user_prompt = f"""Based on these song lyrics, generate an optimized natural-language prompt for Google Lyria (Vertex AI music generation). Lyria expects descriptive prose — not bracket tags.
 
 ARTIST PERSONA: {persona}
 MOOD TAGS: {", ".join(mood_tags)}
 HOOK LINE: {hook_line}
 KEY: {key}
-BPM RANGE: {bpm_range[0]}-{bpm_range[1]}
-INSTRUMENTATION SIGNATURE: {instru_str}
-STYLE BASE: {style_profile['base_style_tags']}
-VOCAL STYLE: {style_profile['vocal_tags']}
+TEMPO: approximately {bpm_mid} BPM
+INSTRUMENTATION: {instru_str}
+GENRE BASE: {style_profile['genre']}
+VOCAL STYLE: {style_profile['vocals']}
 
 LYRICS EXCERPT (first 8 lines):
 {chr(10).join(lyrics_text.split(chr(10))[:8])}
@@ -204,18 +199,17 @@ LYRICS EXCERPT (first 8 lines):
 Generate a JSON response with this exact structure:
 ```json
 {{
-  "suno_prompt": "Complete Suno-format prompt with style tags in brackets",
-  "udio_prompt": "Complete Udio-format prompt as descriptive sentences",
+  "lyria_prompt": "Complete natural-language prompt describing genre, vocals, instrumentation, mood, key, tempo, and emotional quality for Google Lyria",
   "negative_prompt": "Elements to avoid in generation"
 }}
 ```"""
 
         raw = self._gemini.generate(
-            system_prompt="You are an expert AI music prompt engineer specializing in Suno and Udio.",
+            system_prompt="You are an expert AI music prompt engineer specializing in Google Lyria (Vertex AI).",
             user_prompt=user_prompt,
             model="gemini-1.5-flash",
             temperature=0.7,
-            max_tokens=800,
+            max_tokens=600,
         )
 
         json_match = re.search(r"```json\s*(\{.*?\})\s*```", raw, re.DOTALL)
@@ -235,7 +229,7 @@ Generate a JSON response with this exact structure:
         )
 
     def _extract_genre_tags(self, style_profile: dict, genre_preference: str) -> list[str]:
-        base = style_profile["base_style_tags"].split(", ")
+        base = style_profile["genre"].split(", ")
         if genre_preference:
             base.append(genre_preference)
         return base[:6]

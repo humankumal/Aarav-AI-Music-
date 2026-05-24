@@ -33,9 +33,9 @@ def run_smoke_test(artist_id: str, theme: str) -> bool:
     print(f"  Song title: {result['song_title']}")
     print(f"  Hook line:  {result['lyrics']['hook_line']}")
     print(f"  SEO score:  {result['metadata']['seo_score']}/100")
-    print(f"  Suno prompt (first 100 chars):")
-    suno = result['music_prompts']['suno_prompt']
-    print(f"    {suno[:100]}...")
+    print(f"  Lyria prompt (first 100 chars):")
+    lyria = result['music_prompts']['lyria_prompt']
+    print(f"    {lyria[:100]}...")
 
     # Save output for inspection
     out_path = Path("storage") / artist_id / "songs"

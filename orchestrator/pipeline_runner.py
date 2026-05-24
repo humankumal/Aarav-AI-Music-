@@ -23,7 +23,7 @@ CONFIG_DIR = Path(__file__).parent.parent / "config"
 
 class PipelineRunner:
     """Full pipeline: Lyrics → MusicPrompt → Metadata (Phase 1)
-    then: Suno → Normalize → LyricVideo → Thumbnail → Shorts → Publish (Phase 2).
+    then: Lyria → Normalize → LyricVideo → Thumbnail → Shorts → Publish (Phase 2).
 
     Calling run() alone gives Phase 1 output (prompts + metadata, no media).
     Calling run_full() runs both phases end-to-end.
@@ -119,7 +119,7 @@ class PipelineRunner:
             context_payload={
                 "lyrics_output": lyrics_output,
                 "genre_preference": genre_preference,
-                "platform_target": "suno",
+                "platform_target": "lyria",
             },
         )
         job_record["steps"]["music_prompt"] = music_result.to_dict()
@@ -163,7 +163,7 @@ class PipelineRunner:
             "music_prompts": music_prompt_output,
             "metadata": metadata_output,
             "next_steps": [
-                "Submit suno_prompt to Suno API → store audio_url",
+                "Submit lyria_prompt to Google Lyria (Vertex AI) → store audio_file",
                 "Submit video prompts to Veo/Runway API → store video_url",
                 "Run FFmpeg media processing",
                 "Run Shorts Agent",
@@ -209,26 +209,26 @@ class PipelineRunner:
             "error_log": [],
         }
         job_record["status"] = "in_progress_phase2"
-        job_record["current_step"] = "suno_generation"
+        job_record["current_step"] = "music_generation"
 
-        # ── Step 4: Suno audio generation ────────────────────────────────────
-        suno_client = self._suno
-        if suno_client is None:
-            from integrations.suno_client import SunoClient
-            suno_client = SunoClient()
+        # ── Step 4: Google Lyria audio generation (Vertex AI) ─────────────────
+        lyria_client = self._suno  # injected via constructor (accepts any client with generate_song())
+        if lyria_client is None:
+            from integrations.lyria_client import LyriaClient
+            lyria_client = LyriaClient()
 
         try:
-            suno_result = suno_client.generate_song(
-                prompt=music_prompts.get("suno_prompt", ""),
+            music_result = lyria_client.generate_song(
+                prompt=music_prompts.get("lyria_prompt", ""),
                 negative_prompt=music_prompts.get("negative_prompt", ""),
                 job_id=job_id,
                 artist_id=artist_id,
             )
-            raw_audio = suno_result.get("audio_file", "")
-            job_record["steps"]["suno_generation"] = suno_result
-            logger.info(f"[{job_id}] Suno complete | provider={suno_result.get('provider')}")
+            raw_audio = music_result.get("audio_file", "")
+            job_record["steps"]["music_generation"] = music_result
+            logger.info(f"[{job_id}] Music generation complete | provider={music_result.get('provider')}")
         except Exception as e:
-            return self._fail_job(job_record, "suno_generation", str(e))
+            return self._fail_job(job_record, "music_generation", str(e))
 
         # ── Step 5: Audio normalization ───────────────────────────────────────
         normalized_audio = raw_audio
@@ -505,8 +505,7 @@ class PipelineRunner:
                         "lyrics": pipeline_output.get("lyrics", {}),
                         "metadata": pipeline_output.get("metadata", {}),
                         "generation_params": {
-                            "suno_prompt": pipeline_output.get("music_prompts", {}).get("suno_prompt", ""),
-                            "udio_prompt": pipeline_output.get("music_prompts", {}).get("udio_prompt", ""),
+                            "lyria_prompt": pipeline_output.get("music_prompts", {}).get("lyria_prompt", ""),
                         },
                         "created_at": datetime.now(timezone.utc).isoformat(),
                     }

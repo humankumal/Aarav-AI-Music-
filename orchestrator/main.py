@@ -146,16 +146,16 @@ def reject_job(job_id: str, notes: str = ""):
     return {"job_id": job_id, "status": "rejected"}
 
 
-@app.post("/suno/webhook")
-def suno_webhook(payload: dict):
-    """Suno completion callback — stores result so SunoClient stops polling."""
-    suno_job_id = payload.get("id", "")
-    if not suno_job_id:
+@app.post("/music/webhook")
+def music_webhook(payload: dict):
+    """Music generation completion callback — stores result for async polling."""
+    music_job_id = payload.get("id", "")
+    if not music_job_id:
         raise HTTPException(status_code=400, detail="Missing 'id' in payload")
-    webhook_path = Path("storage") / "webhooks" / f"{suno_job_id}.json"
+    webhook_path = Path("storage") / "webhooks" / f"{music_job_id}.json"
     webhook_path.parent.mkdir(parents=True, exist_ok=True)
     webhook_path.write_text(json.dumps(payload, indent=2))
-    return {"received": True, "suno_job_id": suno_job_id}
+    return {"received": True, "music_job_id": music_job_id}
 
 
 @app.get("/uploads/{artist_id}")

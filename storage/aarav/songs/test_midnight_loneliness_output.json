@@ -1,5 +1,5 @@
 {
-  "job_id": "9609ce7c-2068-4d7c-8047-0cdf14991524",
+  "job_id": "6c8ab836-ee04-4c17-8219-3ffbdbe56e17",
   "artist_id": "aarav",
   "song_title": "Barsaat Mein Kho Gaya",
   "status": "phase1_complete",
@@ -24,8 +24,7 @@
     "song_type": "full_song"
   },
   "music_prompts": {
-    "suno_prompt": "[dark cinematic bollywood, emotional hindi pop, lo-fi midnight, ambient trap soul] [male vocal, warm raspy voice, emotional delivery, intimate, breathy] [sparse piano, acoustic guitar, deep bass, string swells, vinyl texture] [mood: melancholic, midnight, rain, heartbreak] [key: D minor] [65-80 BPM] [emotional, cinematic, commercially modern]",
-    "udio_prompt": "Genre: dark cinematic bollywood, emotional hindi pop, lo-fi midnight, ambient trap soul. Vocals: male vocal, warm raspy voice, emotional delivery, intimate, breathy. Instrumentation: sparse piano, acoustic guitar, deep bass, string swells, vinyl texture. Mood: melancholic, midnight, rain, heartbreak. Key: D minor. Tempo: 65-80 BPM. Production quality: professional, emotionally resonant, cinematic.",
+    "lyria_prompt": "Genre: dark cinematic Bollywood, emotional Hindi pop, lo-fi midnight, ambient trap soul. Vocals: warm raspy male voice, intimate emotional delivery, breathy and expressive, realistic imperfections. Instrumentation: sparse piano, fingerpicked acoustic guitar, deep 808 bass, orchestral string swells, vinyl crackle texture, atmospheric synth pads. Mood: melancholic, midnight, rain, heartbreak. Key: D minor. Tempo: approximately 72 BPM. Production quality: professional, emotionally resonant, cinematic, commercially modern Hindi music.",
     "negative_prompt": "no autotune robotics, no harsh distortion, no comedy tone, no upbeat club music, no explicit content, no EDM drops, no plagiarized melody from existing copyrighted songs",
     "production_notes": {
       "bpm_range": [
@@ -40,15 +39,15 @@
         "heartbreak",
         "cinematic"
       ],
-      "instrumentation": "sparse piano, acoustic guitar, deep bass, string swells, vinyl texture"
+      "instrumentation": "sparse piano, fingerpicked acoustic guitar, deep 808 bass, orchestral string swells, vinyl crackle texture, atmospheric synth pads"
     },
     "expected_genre_tags": [
-      "dark cinematic bollywood",
-      "emotional hindi pop",
+      "dark cinematic Bollywood",
+      "emotional Hindi pop",
       "lo-fi midnight",
       "ambient trap soul"
     ],
-    "platform_target": "suno"
+    "platform_target": "lyria"
   },
   "metadata": {
     "title": "Dard | Barsaat Mein Kho Gaya | Aarav AI Music | Hindi Melancholic Song 2026",
@@ -101,7 +100,7 @@
     "spotify_metadata": {
       "track_title": "Barsaat Mein Kho Gaya",
       "artist": "Aarav AI Music",
-      "genre": "dark cinematic bollywood",
+      "genre": "dark cinematic Bollywood",
       "mood_tags": [
         "melancholic",
         "midnight",
@@ -113,7 +112,7 @@
     "seo_score": 80
   },
   "next_steps": [
-    "Submit suno_prompt to Suno API → store audio_url",
+    "Submit lyria_prompt to Google Lyria (Vertex AI) → store audio_file",
     "Submit video prompts to Veo/Runway API → store video_url",
     "Run FFmpeg media processing",
     "Run Shorts Agent",

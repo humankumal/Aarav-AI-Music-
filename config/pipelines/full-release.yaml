@@ -21,8 +21,8 @@ steps:
 
   - name: music_generation
     type: external_api
-    provider: suno
-    fallback_provider: udio
+    provider: lyria
+    fallback_provider: vertex_ai
     depends_on: [music_prompt]
     timeout_seconds: 600
     retry_max: 3

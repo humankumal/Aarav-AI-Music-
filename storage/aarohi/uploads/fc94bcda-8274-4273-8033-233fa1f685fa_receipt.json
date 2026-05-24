@@ -1,0 +1,16 @@
+{
+  "upload_id": "c83fc4fa-c5ae-42a8-9de6-eb5f392987ec",
+  "job_id": "fc94bcda-8274-4273-8033-233fa1f685fa",
+  "artist_id": "aarohi",
+  "song_title": "Phir Bhi Chalti Hain",
+  "platform": "youtube",
+  "video_id": "MOCK_FC94BCDA",
+  "url": "https://www.youtube.com/watch?v=MOCK_FC94BCDA",
+  "privacy_status": "private",
+  "publish_at": "2026-05-25T09:30:00.000Z",
+  "thumbnail_path": "storage/aarohi/thumbnails/fc94bcda-8274-4273-8033-233fa1f685fa_thumb.jpg",
+  "video_path": "storage/aarohi/videos/fc94bcda-8274-4273-8033-233fa1f685fa_lyric_video.mp4",
+  "metadata_title": "Intezaar | Phir Bhi Chalti Hain | Aarohi AI Music | Hindi Longing Song 2026",
+  "status": "scheduled",
+  "created_at": "2026-05-24T14:52:21.406630+00:00"
+}
