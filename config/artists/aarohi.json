@@ -1,0 +1,119 @@
+{
+  "artist_id": "aarohi",
+  "display_name": "Aarohi AI Music",
+  "gender": "female",
+  "tagline": "The voice between silence and prayer.",
+  "personality": "elegant, dreamy, emotional, spiritual, artistic, graceful, emotionally powerful",
+  "theme_keywords": [
+    "longing", "emotional healing", "feminine strength", "soft sadness",
+    "emotional beauty", "memories", "hope", "connection", "devotion", "renewal"
+  ],
+  "primary_language": "hindi",
+  "supported_languages": ["hindi", "english", "hinglish", "sanskrit_phrases"],
+  "emotion_range": "longing → yearning → healing → transcendence",
+
+  "voice_config": {
+    "elevenlabs_voice_id": "",
+    "voice_style": "airy_female_ethereal_cinematic",
+    "pitch_modifier": 0,
+    "delivery": "expressive_emotional_whisper_to_soar",
+    "characteristics": [
+      "airy female vocals",
+      "cinematic softness",
+      "emotional whisper textures",
+      "expressive climbing choruses",
+      "emotional realism",
+      "dreamy vocal layers",
+      "breathy intimate sections"
+    ]
+  },
+
+  "music_aesthetic": {
+    "primary_genres": ["spiritual folk pop", "cinematic female pop", "ambient devotional"],
+    "secondary_genres": ["dream pop", "emotional acoustic", "orchestral emotional", "world music fusion"],
+    "tempo_range_bpm": [65, 100],
+    "preferred_keys": ["G major", "D major", "A major", "E major"],
+    "instrumentation_signature": [
+      "delicate fingerpicked acoustic guitar",
+      "ethereal piano",
+      "flute or bansuri",
+      "soft orchestral strings",
+      "ambient pads",
+      "light percussive heartbeats"
+    ],
+    "production_references": ["golden hour emotional pop", "spiritual cinematic feminine"],
+    "avoid": ["dark aggressive tones", "hard drops", "distorted guitars", "dark rap beats"]
+  },
+
+  "visual_style": {
+    "aesthetic": "dreamy_ethereal_golden",
+    "primary_palette": ["#f5e6ca", "#e8c99a", "#c9a96e", "#8b6914", "#d4af7a"],
+    "accent_colors": ["#fff8f0", "#f0d9b5"],
+    "background_tones": "warm gold, soft cream, sunrise amber, moonlit silver",
+    "font_primary": "Cormorant Garamond",
+    "font_secondary": "Lato Light",
+    "character_description": "South Asian female, mid 20s, long flowing dark hair often adorned with flowers or braided softly, warm golden-toned skin, large expressive eyes with emotional depth, traditional-fusion clothing in warm silks or flowing fabrics, always in soft natural or golden light — sunrise, sunset, candles, or moonlight, serene yet emotionally powerful expression",
+    "signature_visuals": [
+      "flower petals falling",
+      "soft sunrise or sunset glow",
+      "flowing silk or cotton fabric",
+      "water reflections",
+      "incense or sacred smoke",
+      "candlelight",
+      "moonlit open fields",
+      "ancient temple aesthetics",
+      "blooming flowers in slow motion"
+    ],
+    "forbidden_elements": [
+      "dark or black backgrounds",
+      "aggressive or violent imagery",
+      "urban grit or neon nightlife",
+      "comedy or meme aesthetic",
+      "other clearly identifiable real artists"
+    ],
+    "camera_style": [
+      "soft golden lens flare",
+      "slow dreamy zoom",
+      "floating aerial shot",
+      "gentle rack focus",
+      "slow motion 120fps",
+      "soft vignette edges"
+    ]
+  },
+
+  "branding": {
+    "watermark_position": "bottom_right",
+    "watermark_opacity": 0.70,
+    "thumbnail_text_style": "elegant_golden",
+    "color_on_light_bg": "#8b6914",
+    "brand_score_minimum": 70
+  },
+
+  "social_profiles": {
+    "youtube_channel_id": "",
+    "youtube_channel_url": "",
+    "spotify_artist_id": "",
+    "tiktok_username": "AarohiAIMusic",
+    "instagram_handle": "@aarohi.ai.music",
+    "youtube_main_playlist_id": ""
+  },
+
+  "upload_schedule": {
+    "preferred_days": ["Monday", "Wednesday", "Friday"],
+    "preferred_time_ist": "15:00",
+    "shorts_stagger_days": [2, 4, 7]
+  },
+
+  "seo": {
+    "base_title_suffix": "| Aarohi AI Music | Hindi Emotional Song 2026",
+    "core_tags": [
+      "aarohi ai music", "hindi emotional song", "ai music female",
+      "spiritual hindi song", "healing hindi music", "female voice hindi sad song",
+      "cinematic hindi female vocal", "emotional song 2026", "hindi devotional pop",
+      "ai generated female voice hindi"
+    ]
+  },
+
+  "created_at": "2026-05-24T00:00:00Z",
+  "updated_at": "2026-05-24T00:00:00Z"
+}

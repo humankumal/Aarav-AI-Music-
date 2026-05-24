@@ -1,0 +1,22 @@
+{
+  "platform": "spotify",
+  "distributor": "distrokid",
+  "distributor_fallback": "tunecore",
+  "genre_primary": "Bollywood",
+  "genre_secondary": "Hindi Pop",
+  "explicit_content": false,
+  "language": "hi",
+  "territory": "worldwide",
+  "release_type": "single",
+  "upc_required": true,
+  "isrc_required": true,
+  "cover_art_resolution": "3000x3000",
+  "cover_art_format": "jpg",
+  "cover_art_min_size_mb": 0.1,
+  "audio_format": "wav",
+  "audio_bit_depth": 24,
+  "audio_sample_rate": 44100,
+  "loudness_lufs": -14,
+  "pitch_moods": ["sad", "melancholic", "romantic", "heartbreak"],
+  "release_lead_time_days": 7
+}

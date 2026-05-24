@@ -1,0 +1,20 @@
+{
+  "platform": "instagram",
+  "content_type": "reels",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "max_duration_seconds": 90,
+  "preferred_duration_seconds": 30,
+  "video_format": "mp4",
+  "cover_image_required": true,
+  "caption_max_length": 2200,
+  "hashtag_max_count": 30,
+  "hashtag_position": "end_of_caption",
+  "upload_delay_hours_after_youtube": 36,
+  "posting_time_ist": "20:00",
+  "posting_days": ["Wednesday", "Friday", "Sunday"],
+  "share_to_feed": true,
+  "share_to_story": false,
+  "location_tag": null,
+  "collaborator_tag": null
+}

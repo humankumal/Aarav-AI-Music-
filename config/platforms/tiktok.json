@@ -1,0 +1,19 @@
+{
+  "platform": "tiktok",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "max_duration_seconds": 60,
+  "preferred_duration_seconds": 30,
+  "video_format": "mp4",
+  "audio_codec": "aac",
+  "caption_max_length": 2200,
+  "hashtag_max_count": 30,
+  "upload_delay_hours_after_youtube": 36,
+  "posting_time_ist": "19:00",
+  "posting_days": ["Wednesday", "Friday", "Sunday"],
+  "cover_frame_second": 2,
+  "duet_enabled": false,
+  "stitch_enabled": false,
+  "comment_enabled": true,
+  "share_enabled": true
+}

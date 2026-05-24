@@ -1,0 +1,49 @@
+# Environment
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+.next/
+out/
+*.log
+
+# Firebase secrets (never commit)
+firebase/service-account.json
+firebase/youtube_token_*.json
+firebase/youtube_oauth_credentials.json
+
+# Media storage (too large for git)
+storage/*/songs/*.mp3
+storage/*/videos/*.mp4
+storage/*/shorts/*.mp4
+storage/*/thumbnails/*.jpg
+storage/*/thumbnails/*.png
+
+# Keep draft JSON outputs in git for debugging
+!storage/**/*.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage

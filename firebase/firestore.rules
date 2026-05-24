@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Service accounts bypass these rules via Admin SDK
+    // These rules apply to client-side Firebase SDK access only
+
+    match /artists/{artistId} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only admin SDK writes
+    }
+
+    match /songs/{songId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
+    match /pipeline_jobs/{jobId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
+    match /uploads/{uploadId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
+    match /analytics/{docId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
+    match /approvals/{approvalId} {
+      allow read: if request.auth != null;
+      // Allow authenticated users to write approval decisions
+      allow write: if request.auth != null
+        && request.auth.token.email == 'kumalhuman@gmail.com';
+    }
+
+    match /prompts_library/{promptId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+  }
+}

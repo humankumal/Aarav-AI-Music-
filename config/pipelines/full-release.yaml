@@ -1,0 +1,83 @@
+name: full-release
+description: Complete pipeline from theme to multi-platform published video
+
+steps:
+  - name: lyrics
+    agent: LyricsAgent
+    timeout_seconds: 120
+    retry_max: 2
+
+  - name: music_prompt
+    agent: MusicPromptAgent
+    depends_on: [lyrics]
+    timeout_seconds: 60
+    retry_max: 2
+
+  - name: visual_prompt
+    agent: VisualPromptAgent
+    depends_on: [lyrics]
+    timeout_seconds: 90
+    retry_max: 2
+
+  - name: music_generation
+    type: external_api
+    provider: suno
+    fallback_provider: udio
+    depends_on: [music_prompt]
+    timeout_seconds: 600
+    retry_max: 3
+    poll_interval_seconds: 15
+
+  - name: video_generation
+    type: external_api
+    provider: veo
+    fallback_provider: runway
+    depends_on: [visual_prompt]
+    timeout_seconds: 900
+    retry_max: 2
+    poll_interval_seconds: 30
+
+  - name: media_processing
+    type: ffmpeg
+    depends_on: [music_generation, video_generation]
+    timeout_seconds: 300
+    retry_max: 2
+
+  - name: metadata
+    agent: MetadataAgent
+    depends_on: [lyrics, media_processing]
+    timeout_seconds: 60
+    retry_max: 2
+
+  - name: shorts
+    agent: ShortsAgent
+    depends_on: [media_processing, lyrics]
+    timeout_seconds: 120
+    retry_max: 2
+
+  - name: branding_validation
+    agent: BrandingAgent
+    depends_on: [media_processing, shorts]
+    timeout_seconds: 60
+    retry_max: 1
+
+  - name: human_approval
+    type: approval_gate
+    depends_on: [metadata, shorts, branding_validation]
+    required: true
+    timeout_hours: 48
+
+  - name: publishing
+    agent: PublishingAgent
+    depends_on: [human_approval]
+    timeout_seconds: 300
+    retry_max: 3
+
+platforms:
+  - youtube
+  - tiktok
+  - instagram
+  - spotify
+
+shorts_count: 3
+shorts_stagger_days: [2, 4, 7]

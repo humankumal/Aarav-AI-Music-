@@ -1,0 +1,117 @@
+{
+  "artist_id": "aarav",
+  "display_name": "Aarav AI Music",
+  "gender": "male",
+  "tagline": "Emotions only the night can hold.",
+  "personality": "mysterious, emotionally deep, poetic, cinematic, introspective, soulful",
+  "theme_keywords": [
+    "heartbreak", "loneliness", "nostalgia", "healing", "memories",
+    "rain", "midnight", "deep romantic connection", "loss", "longing"
+  ],
+  "primary_language": "hindi",
+  "supported_languages": ["hindi", "english", "hinglish", "urdu"],
+  "emotion_range": "melancholic → devastating → numb → quietly accepting",
+
+  "voice_config": {
+    "elevenlabs_voice_id": "",
+    "voice_style": "warm_male_raspy_cinematic",
+    "pitch_modifier": -2,
+    "delivery": "intimate",
+    "characteristics": [
+      "warm male vocal",
+      "soft rasp",
+      "emotional breathing",
+      "intimate delivery",
+      "realistic imperfections",
+      "emotionally expressive pauses"
+    ]
+  },
+
+  "music_aesthetic": {
+    "primary_genres": ["dark pop", "cinematic bollywood", "ambient trap soul"],
+    "secondary_genres": ["lo-fi emotional", "acoustic storytelling", "orchestral emotional"],
+    "tempo_range_bpm": [60, 95],
+    "preferred_keys": ["D minor", "A minor", "E minor", "B minor"],
+    "instrumentation_signature": [
+      "intimate acoustic guitar",
+      "sparse piano",
+      "deep 808 bass",
+      "string swells",
+      "atmospheric synth pads",
+      "vinyl crackle texture"
+    ],
+    "production_references": ["late-night emotional ambience", "cinematic emotional pop"],
+    "avoid": ["upbeat club tracks", "comedy tones", "harsh EDM drops"]
+  },
+
+  "visual_style": {
+    "aesthetic": "dark_cinematic_noir",
+    "primary_palette": ["#1a1a2e", "#16213e", "#0f3460", "#e94560"],
+    "accent_colors": ["#c8a96e", "#8b7355"],
+    "background_tones": "dark blue, charcoal, midnight black",
+    "font_primary": "Cinzel Decorative",
+    "font_secondary": "Raleway Light",
+    "character_description": "South Asian male, late 20s, dark slightly-messy hair, sharp jawline, lean build, always in dim or blue-tinted cinematic lighting, often near rain-streaked windows or in sparse empty rooms, black modern fashion, emotionally distant yet magnetic expression",
+    "signature_visuals": [
+      "rain on glass",
+      "city lights from rooftop",
+      "single dramatic light source",
+      "smoke wisps",
+      "empty midnight streets",
+      "neon reflections in puddles",
+      "fog",
+      "slow-motion rain"
+    ],
+    "forbidden_elements": [
+      "bright or pastel colors",
+      "smiling or laughing",
+      "daytime outdoor scenes",
+      "crowded spaces",
+      "comedy or meme aesthetic",
+      "other clearly identifiable real artists"
+    ],
+    "camera_style": [
+      "Dutch angle",
+      "slow zoom in",
+      "shallow depth of field",
+      "handheld intimate",
+      "slow motion 120fps",
+      "extreme emotional closeup"
+    ]
+  },
+
+  "branding": {
+    "watermark_position": "bottom_right",
+    "watermark_opacity": 0.70,
+    "thumbnail_text_style": "minimal_dramatic",
+    "color_on_dark_bg": "#e94560",
+    "brand_score_minimum": 70
+  },
+
+  "social_profiles": {
+    "youtube_channel_id": "",
+    "youtube_channel_url": "",
+    "spotify_artist_id": "",
+    "tiktok_username": "AaravAIMusic",
+    "instagram_handle": "@aarav.ai.music",
+    "youtube_main_playlist_id": ""
+  },
+
+  "upload_schedule": {
+    "preferred_days": ["Tuesday", "Thursday", "Saturday"],
+    "preferred_time_ist": "15:30",
+    "shorts_stagger_days": [2, 4, 7]
+  },
+
+  "seo": {
+    "base_title_suffix": "| Aarav AI Music | Hindi Sad Song 2026",
+    "core_tags": [
+      "aarav ai music", "hindi sad song", "ai music", "emotional hindi song",
+      "hindi heartbreak song", "cinematic hindi music", "midnight song hindi",
+      "sad song 2026", "hindi lo-fi", "ai generated music hindi"
+    ]
+  },
+
+  "created_at": "2026-05-24T00:00:00Z",
+  "updated_at": "2026-05-24T00:00:00Z"
+}

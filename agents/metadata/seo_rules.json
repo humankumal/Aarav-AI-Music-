@@ -1,0 +1,54 @@
+{
+  "title_rules": {
+    "max_length": 100,
+    "emotional_keywords_high_value": [
+      "dard", "aansu", "tanhai", "rootha", "judai", "dil", "mohabbat",
+      "heartbreak", "sad", "emotional", "alone", "missing", "tears",
+      "baarish", "raat", "yaadein", "bichhad", "bewafa"
+    ],
+    "year_suffix_required": true,
+    "artist_name_required": true,
+    "template": "{emotional_keyword} | {song_name} | {artist_name} | Hindi {mood} Song {year}"
+  },
+  "description_structure": [
+    "hook_sentence",
+    "blank_line",
+    "song_context_2_lines",
+    "blank_line",
+    "lyrics_teaser_4_lines",
+    "blank_line",
+    "timestamps_section",
+    "blank_line",
+    "platform_links_section",
+    "blank_line",
+    "disclaimer_ai_disclosure",
+    "blank_line",
+    "hashtags_block"
+  ],
+  "tag_strategy": {
+    "total_tags_target": 30,
+    "tiers": {
+      "exact_match": ["aarav ai music", "aarohi ai music"],
+      "high_volume_genre": ["hindi sad song 2026", "bollywood sad song", "emotional hindi song"],
+      "mid_volume_mood": ["hindi heartbreak song", "midnight song hindi", "rain song hindi"],
+      "long_tail_specific": ["ai generated hindi music", "hindi lo fi 2026", "cinematic hindi sad song"],
+      "trending_seasonal": []
+    }
+  },
+  "ai_disclosure_text": "🤖 This song is created using AI music generation tools. All creative direction, lyrics, emotional storytelling, and production guidance are curated by the Aarav AI Music team. #AIMusic #ArtificialIntelligence",
+  "chapter_format": "0:00 Intro\n0:30 Verse 1\n1:15 Chorus\n1:55 Verse 2\n2:35 Chorus\n3:10 Bridge\n3:30 Final Chorus\n3:55 Outro",
+  "platform_links_template": {
+    "youtube_subscribe": "🔔 Subscribe: {channel_url}",
+    "spotify": "🎵 Spotify: {spotify_url}",
+    "instagram": "📸 Instagram: {instagram_url}",
+    "tiktok": "🎵 TikTok: {tiktok_url}"
+  },
+  "hashtag_groups": {
+    "aarav_core": ["#AaravAIMusic", "#AaravAI", "#HindiAIMusic"],
+    "aarohi_core": ["#AarohiAIMusic", "#AarohiAI", "#HindiAIFemale"],
+    "genre": ["#HindiSadSong", "#BollywoodSad", "#EmotionalHindi", "#CinematicHindi"],
+    "mood": ["#Heartbreak", "#LonelySong", "#MidnightVibes", "#RainSong", "#NostalgiaMusic"],
+    "ai": ["#AIMusic", "#AIGenerated", "#ArtificialIntelligenceMusic", "#FutureOfMusic"],
+    "reach": ["#HindiMusic", "#IndianMusic", "#Bollywood", "#SadSong2026", "#NewHindiSong"]
+  }
+}

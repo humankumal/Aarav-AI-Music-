@@ -1,0 +1,63 @@
+name: shorts-only
+description: Generate and publish only short-form clips (no full music video)
+
+steps:
+  - name: lyrics
+    agent: LyricsAgent
+    timeout_seconds: 120
+    retry_max: 2
+    params:
+      song_type: short_clip
+
+  - name: music_prompt
+    agent: MusicPromptAgent
+    depends_on: [lyrics]
+    timeout_seconds: 60
+
+  - name: music_generation
+    type: external_api
+    provider: suno
+    fallback_provider: udio
+    depends_on: [music_prompt]
+    timeout_seconds: 300
+
+  - name: visual_prompt
+    agent: VisualPromptAgent
+    depends_on: [lyrics]
+    timeout_seconds: 60
+    params:
+      video_type: short_clip
+
+  - name: video_generation
+    type: external_api
+    provider: veo
+    fallback_provider: runway
+    depends_on: [visual_prompt]
+    timeout_seconds: 600
+
+  - name: media_processing
+    type: ffmpeg
+    depends_on: [music_generation, video_generation]
+    timeout_seconds: 120
+
+  - name: shorts
+    agent: ShortsAgent
+    depends_on: [media_processing, lyrics]
+    timeout_seconds: 60
+
+  - name: metadata
+    agent: MetadataAgent
+    depends_on: [lyrics, media_processing]
+    timeout_seconds: 60
+
+  - name: publishing
+    agent: PublishingAgent
+    depends_on: [metadata, shorts]
+    timeout_seconds: 120
+
+platforms:
+  - youtube_shorts
+  - tiktok
+  - instagram_reels
+
+shorts_count: 1
