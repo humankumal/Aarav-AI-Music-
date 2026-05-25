@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "narayan_gopal",
+  "reference_artist_name": "Narayan Gopal",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["classical nepali", "ghazal", "semi-classical"],
+  "songs": [
+    {"song_id": "ng_001", "title": "Euta Manche Ko"},
+    {"song_id": "ng_002", "title": "Malai Nasodha"},
+    {"song_id": "ng_003", "title": "Yo Samjhine Man Cha"},
+    {"song_id": "ng_004", "title": "Kehi Mitho Baat Gara"},
+    {"song_id": "ng_005", "title": "Timilai Ma Ke Bhanu"},
+    {"song_id": "ng_006", "title": "Parkhi Base"},
+    {"song_id": "ng_007", "title": "Mero Pyaro Okhaldhunga"},
+    {"song_id": "ng_008", "title": "Yeti Dherai Maya"},
+    {"song_id": "ng_009", "title": "Aaja Bholi Harek Sanjha"},
+    {"song_id": "ng_010", "title": "Birsera Feri Malai"},
+    {"song_id": "ng_011", "title": "Kati Baschau Maiti Kai"},
+    {"song_id": "ng_012", "title": "Bihan Uthne Bittikai"},
+    {"song_id": "ng_013", "title": "Ma Ta Lali Guras Bhayechu"},
+    {"song_id": "ng_014", "title": "Timi Jun Rahar Le"},
+    {"song_id": "ng_015", "title": "Kehi Choti"},
+    {"song_id": "ng_016", "title": "Mero Geet"},
+    {"song_id": "ng_017", "title": "Pokhiyera Gham Ko Jhulka"},
+    {"song_id": "ng_018", "title": "Timi Lai Bhulda"},
+    {"song_id": "ng_019", "title": "Aankha Chopi Narou"},
+    {"song_id": "ng_020", "title": "Maya Ta Maya Ho"}
+  ]
+}

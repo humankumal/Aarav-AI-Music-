@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "nabin_k_bhattarai",
+  "reference_artist_name": "Nabin K Bhattarai",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali classic pop", "romantic", "sentimental"],
+  "songs": [
+    {"song_id": "nkb_001", "title": "Timile Herda"},
+    {"song_id": "nkb_002", "title": "Aankhama"},
+    {"song_id": "nkb_003", "title": "Sanjha Pakha"},
+    {"song_id": "nkb_004", "title": "Yaad"},
+    {"song_id": "nkb_005", "title": "Bhetghat"},
+    {"song_id": "nkb_006", "title": "Maya"},
+    {"song_id": "nkb_007", "title": "Timro Yaad"},
+    {"song_id": "nkb_008", "title": "Sapanima"},
+    {"song_id": "nkb_009", "title": "Yo Mann"},
+    {"song_id": "nkb_010", "title": "Jindagi"},
+    {"song_id": "nkb_011", "title": "Parkhai"},
+    {"song_id": "nkb_012", "title": "Samjhana"},
+    {"song_id": "nkb_013", "title": "Timi Nai"},
+    {"song_id": "nkb_014", "title": "Chiso Hawa"},
+    {"song_id": "nkb_015", "title": "Kasto Maya"},
+    {"song_id": "nkb_016", "title": "Timro Maya"},
+    {"song_id": "nkb_017", "title": "Mero Geet"},
+    {"song_id": "nkb_018", "title": "Dui Din Ko"},
+    {"song_id": "nkb_019", "title": "Aaja Bholi"},
+    {"song_id": "nkb_020", "title": "Chahana"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "arijit_singh",
+  "reference_artist_name": "Arijit Singh",
+  "origin": "India",
+  "primary_language": "hindi",
+  "genre_tags": ["bollywood", "hindi pop", "romantic ballad", "playback singing"],
+  "songs": [
+    {"song_id": "arij_001", "title": "Tum Hi Ho"},
+    {"song_id": "arij_002", "title": "Kesariya"},
+    {"song_id": "arij_003", "title": "Channa Mereya"},
+    {"song_id": "arij_004", "title": "Raabta"},
+    {"song_id": "arij_005", "title": "Agar Tum Saath Ho"},
+    {"song_id": "arij_006", "title": "Apna Bana Le"},
+    {"song_id": "arij_007", "title": "Phir Le Aya Dil"},
+    {"song_id": "arij_008", "title": "Muskurane"},
+    {"song_id": "arij_009", "title": "Hamari Adhuri Kahani"},
+    {"song_id": "arij_010", "title": "Gerua"},
+    {"song_id": "arij_011", "title": "Ae Dil Hai Mushkil"},
+    {"song_id": "arij_012", "title": "Tera Hone Laga Hoon"},
+    {"song_id": "arij_013", "title": "Janam Janam"},
+    {"song_id": "arij_014", "title": "Kalank"},
+    {"song_id": "arij_015", "title": "Shayad"},
+    {"song_id": "arij_016", "title": "O Bedardeya"},
+    {"song_id": "arij_017", "title": "Sooraj Dooba"},
+    {"song_id": "arij_018", "title": "Khairiyat"},
+    {"song_id": "arij_019", "title": "Tose Naina"},
+    {"song_id": "arij_020", "title": "Roke Na Ruke Naina"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "asha_bhosle",
+  "reference_artist_name": "Asha Bhosle",
+  "origin": "India",
+  "primary_language": "hindi",
+  "genre_tags": ["bollywood classic", "cabaret", "ghazal", "playback singing"],
+  "songs": [
+    {"song_id": "ashb_001", "title": "Dum Maro Dum"},
+    {"song_id": "ashb_002", "title": "Piya Tu Ab To Aaja"},
+    {"song_id": "ashb_003", "title": "Chura Liya Hai Tumne"},
+    {"song_id": "ashb_004", "title": "In Aankhon Ki Masti"},
+    {"song_id": "ashb_005", "title": "Yeh Mera Dil"},
+    {"song_id": "ashb_006", "title": "Mera Kuch Samaan"},
+    {"song_id": "ashb_007", "title": "O Mere Sona Re"},
+    {"song_id": "ashb_008", "title": "Radha Kaise Na Jale"},
+    {"song_id": "ashb_009", "title": "Zara Sa Jhoom Loon Main"},
+    {"song_id": "ashb_010", "title": "Do Lafzon Ki Hai Dil Ki Kahani"},
+    {"song_id": "ashb_011", "title": "Dil Cheez Kya Hai"},
+    {"song_id": "ashb_012", "title": "Aao Huzoor Tumko"},
+    {"song_id": "ashb_013", "title": "Mehbooba Mehbooba"},
+    {"song_id": "ashb_014", "title": "Hungama Ho Gaya"},
+    {"song_id": "ashb_015", "title": "Jawani Janeman"},
+    {"song_id": "ashb_016", "title": "Le Gayi"},
+    {"song_id": "ashb_017", "title": "Tanha Tanha"},
+    {"song_id": "ashb_018", "title": "Ude Jab Jab Zulfein Teri"},
+    {"song_id": "ashb_019", "title": "Aaiye Meherbaan"},
+    {"song_id": "ashb_020", "title": "Raat Akeli Hai"}
+  ]
+}

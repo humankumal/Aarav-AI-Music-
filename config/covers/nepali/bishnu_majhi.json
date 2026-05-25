@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "bishnu_majhi",
+  "reference_artist_name": "Bishnu Majhi",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["lok dohori", "folk", "nepali folk pop"],
+  "songs": [
+    {"song_id": "bm_001", "title": "Salko Patko Tapari"},
+    {"song_id": "bm_002", "title": "Driver Dai"},
+    {"song_id": "bm_003", "title": "Lalupate Nugyo"},
+    {"song_id": "bm_004", "title": "Rumal Hallai"},
+    {"song_id": "bm_005", "title": "Pirati Ko Mitho Tirsana"},
+    {"song_id": "bm_006", "title": "Salaijo"},
+    {"song_id": "bm_007", "title": "Timro Maya"},
+    {"song_id": "bm_008", "title": "Chautari"},
+    {"song_id": "bm_009", "title": "Kanchhi"},
+    {"song_id": "bm_010", "title": "Maya Ko Bato"},
+    {"song_id": "bm_011", "title": "Jhyam Jhyam"},
+    {"song_id": "bm_012", "title": "Suna Maya"},
+    {"song_id": "bm_013", "title": "Kasto Maya"},
+    {"song_id": "bm_014", "title": "Aankhama"},
+    {"song_id": "bm_015", "title": "Sapanima"},
+    {"song_id": "bm_016", "title": "Jindagi"},
+    {"song_id": "bm_017", "title": "Parkhai"},
+    {"song_id": "bm_018", "title": "Samjhana"},
+    {"song_id": "bm_019", "title": "Timi Nai"},
+    {"song_id": "bm_020", "title": "Yo Mann"}
+  ]
+}

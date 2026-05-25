@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "freddie_mercury",
+  "reference_artist_name": "Freddie Mercury",
+  "origin": "UK",
+  "primary_language": "english",
+  "genre_tags": ["rock", "glam rock", "arena rock", "opera rock"],
+  "songs": [
+    {"song_id": "fm_001", "title": "Bohemian Rhapsody"},
+    {"song_id": "fm_002", "title": "We Are The Champions"},
+    {"song_id": "fm_003", "title": "Somebody To Love"},
+    {"song_id": "fm_004", "title": "Don't Stop Me Now"},
+    {"song_id": "fm_005", "title": "Radio Ga Ga"},
+    {"song_id": "fm_006", "title": "Killer Queen"},
+    {"song_id": "fm_007", "title": "Another One Bites The Dust"},
+    {"song_id": "fm_008", "title": "Under Pressure"},
+    {"song_id": "fm_009", "title": "Love Of My Life"},
+    {"song_id": "fm_010", "title": "I Want To Break Free"},
+    {"song_id": "fm_011", "title": "We Will Rock You"},
+    {"song_id": "fm_012", "title": "Crazy Little Thing Called Love"},
+    {"song_id": "fm_013", "title": "The Show Must Go On"},
+    {"song_id": "fm_014", "title": "Bicycle Race"},
+    {"song_id": "fm_015", "title": "Fat Bottomed Girls"},
+    {"song_id": "fm_016", "title": "Who Wants To Live Forever"},
+    {"song_id": "fm_017", "title": "One Vision"},
+    {"song_id": "fm_018", "title": "A Kind Of Magic"},
+    {"song_id": "fm_019", "title": "Hammer To Fall"},
+    {"song_id": "fm_020", "title": "Save Me"}
+  ]
+}

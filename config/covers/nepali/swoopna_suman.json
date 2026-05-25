@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "swoopna_suman",
+  "reference_artist_name": "Swoopna Suman",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["indie nepali", "soul pop", "contemporary"],
+  "songs": [
+    {"song_id": "ss_001", "title": "Kasari Bhanu"},
+    {"song_id": "ss_002", "title": "Je Chhau Timi"},
+    {"song_id": "ss_003", "title": "Ma Timro"},
+    {"song_id": "ss_004", "title": "Kurera Basey"},
+    {"song_id": "ss_005", "title": "K Saro Ramri Bhako"},
+    {"song_id": "ss_006", "title": "Timro Yaad"},
+    {"song_id": "ss_007", "title": "Maya"},
+    {"song_id": "ss_008", "title": "Jindagi"},
+    {"song_id": "ss_009", "title": "Parkhai"},
+    {"song_id": "ss_010", "title": "Chiso Hawa"},
+    {"song_id": "ss_011", "title": "Samjhana"},
+    {"song_id": "ss_012", "title": "Yo Mann"},
+    {"song_id": "ss_013", "title": "Timi Nai"},
+    {"song_id": "ss_014", "title": "Sapanima"},
+    {"song_id": "ss_015", "title": "Aankhama"},
+    {"song_id": "ss_016", "title": "Mero Geet"},
+    {"song_id": "ss_017", "title": "Kasto Maya"},
+    {"song_id": "ss_018", "title": "Dui Din Ko"},
+    {"song_id": "ss_019", "title": "Timro Maya"},
+    {"song_id": "ss_020", "title": "Aaja Bholi"}
+  ]
+}

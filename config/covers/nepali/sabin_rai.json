@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "sabin_rai",
+  "reference_artist_name": "Sabin Rai",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali contemporary", "rock pop", "emotional ballad"],
+  "songs": [
+    {"song_id": "sr_001", "title": "Komal Tyo Timro"},
+    {"song_id": "sr_002", "title": "Samjhana Harulai"},
+    {"song_id": "sr_003", "title": "Guransa Ko Fedmuni"},
+    {"song_id": "sr_004", "title": "Sadhai Sadhai"},
+    {"song_id": "sr_005", "title": "Namuna"},
+    {"song_id": "sr_006", "title": "Jau Ki Basu"},
+    {"song_id": "sr_007", "title": "Aafnai Sansar"},
+    {"song_id": "sr_008", "title": "Nischal"},
+    {"song_id": "sr_009", "title": "Kalo Kalo Raat"},
+    {"song_id": "sr_010", "title": "Timi Nai Hau"},
+    {"song_id": "sr_011", "title": "Mero Maya"},
+    {"song_id": "sr_012", "title": "Sapanima"},
+    {"song_id": "sr_013", "title": "Parkhai"},
+    {"song_id": "sr_014", "title": "Maya Jalai Ma"},
+    {"song_id": "sr_015", "title": "Aaja Ma"},
+    {"song_id": "sr_016", "title": "Kura Kani"},
+    {"song_id": "sr_017", "title": "Birsana"},
+    {"song_id": "sr_018", "title": "Chahana"},
+    {"song_id": "sr_019", "title": "Timi Bina"},
+    {"song_id": "sr_020", "title": "Jindagi"}
+  ]
+}

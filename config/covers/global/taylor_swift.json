@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "taylor_swift",
+  "reference_artist_name": "Taylor Swift",
+  "origin": "USA",
+  "primary_language": "english",
+  "genre_tags": ["pop", "country pop", "indie pop", "singer-songwriter"],
+  "songs": [
+    {"song_id": "tsw_001", "title": "Love Story"},
+    {"song_id": "tsw_002", "title": "Blank Space"},
+    {"song_id": "tsw_003", "title": "Shake It Off"},
+    {"song_id": "tsw_004", "title": "Anti-Hero"},
+    {"song_id": "tsw_005", "title": "You Belong With Me"},
+    {"song_id": "tsw_006", "title": "Cruel Summer"},
+    {"song_id": "tsw_007", "title": "Style"},
+    {"song_id": "tsw_008", "title": "Cardigan"},
+    {"song_id": "tsw_009", "title": "Willow"},
+    {"song_id": "tsw_010", "title": "Delicate"},
+    {"song_id": "tsw_011", "title": "Enchanted"},
+    {"song_id": "tsw_012", "title": "Bad Blood"},
+    {"song_id": "tsw_013", "title": "Wildest Dreams"},
+    {"song_id": "tsw_014", "title": "All Too Well"},
+    {"song_id": "tsw_015", "title": "Lavender Haze"},
+    {"song_id": "tsw_016", "title": "Fearless"},
+    {"song_id": "tsw_017", "title": "Karma"},
+    {"song_id": "tsw_018", "title": "Back To December"},
+    {"song_id": "tsw_019", "title": "Red"},
+    {"song_id": "tsw_020", "title": "Mine"}
+  ]
+}

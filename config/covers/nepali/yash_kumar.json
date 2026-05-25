@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "yash_kumar",
+  "reference_artist_name": "Yash Kumar",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali pop", "sentimental", "romantic"],
+  "songs": [
+    {"song_id": "yk_001", "title": "Timro Maya"},
+    {"song_id": "yk_002", "title": "Ma Ta Marchhu Ki"},
+    {"song_id": "yk_003", "title": "Huri Chali Rahecha"},
+    {"song_id": "yk_004", "title": "Mayalu"},
+    {"song_id": "yk_005", "title": "Yo Mutu"},
+    {"song_id": "yk_006", "title": "Kasto Maya"},
+    {"song_id": "yk_007", "title": "Aaja Timilai"},
+    {"song_id": "yk_008", "title": "Timi Bina"},
+    {"song_id": "yk_009", "title": "Parkhai Ma"},
+    {"song_id": "yk_010", "title": "Suna Maya"},
+    {"song_id": "yk_011", "title": "Jindagi"},
+    {"song_id": "yk_012", "title": "Timi Nai"},
+    {"song_id": "yk_013", "title": "Samjhana"},
+    {"song_id": "yk_014", "title": "Dui Din Ko"},
+    {"song_id": "yk_015", "title": "Timro Yaad"},
+    {"song_id": "yk_016", "title": "Maya Ko Dori"},
+    {"song_id": "yk_017", "title": "Chiso Hawa"},
+    {"song_id": "yk_018", "title": "Mero Geet"},
+    {"song_id": "yk_019", "title": "Aankhama"},
+    {"song_id": "yk_020", "title": "Sapani Ma"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "eminem",
+  "reference_artist_name": "Eminem",
+  "origin": "USA",
+  "primary_language": "english",
+  "genre_tags": ["hip hop", "rap", "alternative hip hop"],
+  "songs": [
+    {"song_id": "emm_001", "title": "Lose Yourself"},
+    {"song_id": "emm_002", "title": "Not Afraid"},
+    {"song_id": "emm_003", "title": "Stan"},
+    {"song_id": "emm_004", "title": "Mockingbird"},
+    {"song_id": "emm_005", "title": "Love The Way You Lie"},
+    {"song_id": "emm_006", "title": "Rap God"},
+    {"song_id": "emm_007", "title": "Without Me"},
+    {"song_id": "emm_008", "title": "The Real Slim Shady"},
+    {"song_id": "emm_009", "title": "Godzilla"},
+    {"song_id": "emm_010", "title": "Superman"},
+    {"song_id": "emm_011", "title": "Till I Collapse"},
+    {"song_id": "emm_012", "title": "Cleaning Out My Closet"},
+    {"song_id": "emm_013", "title": "Sing For The Moment"},
+    {"song_id": "emm_014", "title": "Venom"},
+    {"song_id": "emm_015", "title": "Lucky You"},
+    {"song_id": "emm_016", "title": "Beautiful"},
+    {"song_id": "emm_017", "title": "Space Bound"},
+    {"song_id": "emm_018", "title": "River"},
+    {"song_id": "emm_019", "title": "No Love"},
+    {"song_id": "emm_020", "title": "When I'm Gone"}
+  ]
+}

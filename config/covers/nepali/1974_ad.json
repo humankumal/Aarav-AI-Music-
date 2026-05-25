@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "1974_ad",
+  "reference_artist_name": "1974 AD",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali rock", "alternative", "pop rock"],
+  "songs": [
+    {"song_id": "1974_001", "title": "Sambodhan"},
+    {"song_id": "1974_002", "title": "Hidda Hiddai"},
+    {"song_id": "1974_003", "title": "Parelima"},
+    {"song_id": "1974_004", "title": "Pinjada Ko Suga"},
+    {"song_id": "1974_005", "title": "Chudaina"},
+    {"song_id": "1974_006", "title": "Jungi Nishan"},
+    {"song_id": "1974_007", "title": "Nepali"},
+    {"song_id": "1974_008", "title": "Mutu Bhari"},
+    {"song_id": "1974_009", "title": "Sakdina"},
+    {"song_id": "1974_010", "title": "Yo Mann Ta Mero"},
+    {"song_id": "1974_011", "title": "Samjhi Baschu"},
+    {"song_id": "1974_012", "title": "Timilai Piratile"},
+    {"song_id": "1974_013", "title": "Chaubandi Cholo"},
+    {"song_id": "1974_014", "title": "Mayalu"},
+    {"song_id": "1974_015", "title": "Hijo Matra"},
+    {"song_id": "1974_016", "title": "Guransai Fulyo"},
+    {"song_id": "1974_017", "title": "Kasaile Sodhe"},
+    {"song_id": "1974_018", "title": "Sano Prakash"},
+    {"song_id": "1974_019", "title": "Jhyalai Ma"},
+    {"song_id": "1974_020", "title": "Aaja Bholi"}
+  ]
+}

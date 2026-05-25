@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "ram_krishna_dhakal",
+  "reference_artist_name": "Ram Krishna Dhakal",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali pop", "sentimental", "romantic ballad"],
+  "songs": [
+    {"song_id": "rkd_001", "title": "Bachunjelilai"},
+    {"song_id": "rkd_002", "title": "Orali Lageko"},
+    {"song_id": "rkd_003", "title": "Mero Saathi Haru"},
+    {"song_id": "rkd_004", "title": "Daiba Tero"},
+    {"song_id": "rkd_005", "title": "Aashu"},
+    {"song_id": "rkd_006", "title": "Jindagile Yasari"},
+    {"song_id": "rkd_007", "title": "Timi Bina"},
+    {"song_id": "rkd_008", "title": "Bihana Uthne"},
+    {"song_id": "rkd_009", "title": "Suna Suna"},
+    {"song_id": "rkd_010", "title": "Badal Pari"},
+    {"song_id": "rkd_011", "title": "Priyasi Ko"},
+    {"song_id": "rkd_012", "title": "Timro Samjhanama"},
+    {"song_id": "rkd_013", "title": "Yo Mann"},
+    {"song_id": "rkd_014", "title": "Maya Ko Bato"},
+    {"song_id": "rkd_015", "title": "Chiso Chiso"},
+    {"song_id": "rkd_016", "title": "Timi Aayau"},
+    {"song_id": "rkd_017", "title": "Dui Din Ko"},
+    {"song_id": "rkd_018", "title": "Timi Nai"},
+    {"song_id": "rkd_019", "title": "Aaja Pheri"},
+    {"song_id": "rkd_020", "title": "Sapani Ma"}
+  ]
+}

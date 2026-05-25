@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "bts",
+  "reference_artist_name": "BTS",
+  "origin": "South Korea",
+  "primary_language": "korean",
+  "genre_tags": ["k-pop", "hip hop", "pop", "r&b"],
+  "songs": [
+    {"song_id": "bts_001", "title": "Dynamite"},
+    {"song_id": "bts_002", "title": "Butter"},
+    {"song_id": "bts_003", "title": "Spring Day"},
+    {"song_id": "bts_004", "title": "Boy With Luv"},
+    {"song_id": "bts_005", "title": "Fake Love"},
+    {"song_id": "bts_006", "title": "DNA"},
+    {"song_id": "bts_007", "title": "Permission To Dance"},
+    {"song_id": "bts_008", "title": "Life Goes On"},
+    {"song_id": "bts_009", "title": "Idol"},
+    {"song_id": "bts_010", "title": "Fire"},
+    {"song_id": "bts_011", "title": "Black Swan"},
+    {"song_id": "bts_012", "title": "Blood Sweat And Tears"},
+    {"song_id": "bts_013", "title": "Yet To Come"},
+    {"song_id": "bts_014", "title": "Mic Drop"},
+    {"song_id": "bts_015", "title": "Save Me"},
+    {"song_id": "bts_016", "title": "Run BTS"},
+    {"song_id": "bts_017", "title": "Epiphany"},
+    {"song_id": "bts_018", "title": "Euphoria"},
+    {"song_id": "bts_019", "title": "On"},
+    {"song_id": "bts_020", "title": "Dope"}
+  ]
+}

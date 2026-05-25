@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "elvis_presley",
+  "reference_artist_name": "Elvis Presley",
+  "origin": "USA",
+  "primary_language": "english",
+  "genre_tags": ["rock and roll", "country", "gospel", "pop"],
+  "songs": [
+    {"song_id": "ep_001", "title": "Can't Help Falling In Love"},
+    {"song_id": "ep_002", "title": "Jailhouse Rock"},
+    {"song_id": "ep_003", "title": "Suspicious Minds"},
+    {"song_id": "ep_004", "title": "Love Me Tender"},
+    {"song_id": "ep_005", "title": "Hound Dog"},
+    {"song_id": "ep_006", "title": "Blue Suede Shoes"},
+    {"song_id": "ep_007", "title": "Always On My Mind"},
+    {"song_id": "ep_008", "title": "Burning Love"},
+    {"song_id": "ep_009", "title": "In The Ghetto"},
+    {"song_id": "ep_010", "title": "Return To Sender"},
+    {"song_id": "ep_011", "title": "Heartbreak Hotel"},
+    {"song_id": "ep_012", "title": "Viva Las Vegas"},
+    {"song_id": "ep_013", "title": "Teddy Bear"},
+    {"song_id": "ep_014", "title": "All Shook Up"},
+    {"song_id": "ep_015", "title": "If I Can Dream"},
+    {"song_id": "ep_016", "title": "Kentucky Rain"},
+    {"song_id": "ep_017", "title": "American Trilogy"},
+    {"song_id": "ep_018", "title": "Are You Lonesome Tonight"},
+    {"song_id": "ep_019", "title": "Wooden Heart"},
+    {"song_id": "ep_020", "title": "Blue Christmas"}
+  ]
+}

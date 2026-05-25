@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "om_bikram_bista",
+  "reference_artist_name": "Om Bikram Bista",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali folk pop", "comedy folk", "lok dohori"],
+  "songs": [
+    {"song_id": "obb_001", "title": "Ma Maunta Ma"},
+    {"song_id": "obb_002", "title": "Mero Yaad Aauchha"},
+    {"song_id": "obb_003", "title": "Fattey Maya"},
+    {"song_id": "obb_004", "title": "Huri Bataas"},
+    {"song_id": "obb_005", "title": "Jhyamma Jhyamma"},
+    {"song_id": "obb_006", "title": "Timro Yaad"},
+    {"song_id": "obb_007", "title": "Maya"},
+    {"song_id": "obb_008", "title": "Jindagi"},
+    {"song_id": "obb_009", "title": "Parkhai"},
+    {"song_id": "obb_010", "title": "Samjhana"},
+    {"song_id": "obb_011", "title": "Yo Mann"},
+    {"song_id": "obb_012", "title": "Timi Nai"},
+    {"song_id": "obb_013", "title": "Sapanima"},
+    {"song_id": "obb_014", "title": "Chiso Hawa"},
+    {"song_id": "obb_015", "title": "Kasto Maya"},
+    {"song_id": "obb_016", "title": "Timro Maya"},
+    {"song_id": "obb_017", "title": "Mero Geet"},
+    {"song_id": "obb_018", "title": "Dui Din Ko"},
+    {"song_id": "obb_019", "title": "Aaja Bholi"},
+    {"song_id": "obb_020", "title": "Chahana"}
+  ]
+}

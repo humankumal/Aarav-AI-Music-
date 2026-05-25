@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "karna_das",
+  "reference_artist_name": "Karna Das",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali folk", "sentimental", "folk pop"],
+  "songs": [
+    {"song_id": "kd_001", "title": "Timi Ra Ma"},
+    {"song_id": "kd_002", "title": "Kehi Pal"},
+    {"song_id": "kd_003", "title": "Jau Ki Basu"},
+    {"song_id": "kd_004", "title": "Mero Solta"},
+    {"song_id": "kd_005", "title": "Yestai Rahecha"},
+    {"song_id": "kd_006", "title": "Bistarai Bistarai"},
+    {"song_id": "kd_007", "title": "Yo Katha Ho"},
+    {"song_id": "kd_008", "title": "Maya"},
+    {"song_id": "kd_009", "title": "Timi Bina"},
+    {"song_id": "kd_010", "title": "Chhaya"},
+    {"song_id": "kd_011", "title": "Mero Mann"},
+    {"song_id": "kd_012", "title": "Timro Yaad"},
+    {"song_id": "kd_013", "title": "Jindagi"},
+    {"song_id": "kd_014", "title": "Kasto Din"},
+    {"song_id": "kd_015", "title": "Samjhana"},
+    {"song_id": "kd_016", "title": "Sapanima"},
+    {"song_id": "kd_017", "title": "Timi Nai"},
+    {"song_id": "kd_018", "title": "Aakash"},
+    {"song_id": "kd_019", "title": "Mero Geet"},
+    {"song_id": "kd_020", "title": "Yo Mutu"}
+  ]
+}

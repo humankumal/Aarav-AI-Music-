@@ -1,0 +1,27 @@
+{
+  "catalog_type": "global",
+  "total_artists": 20,
+  "total_songs": 400,
+  "artists": [
+    {"reference_artist_id": "michael_jackson", "file": "michael_jackson.json", "song_count": 20},
+    {"reference_artist_id": "freddie_mercury",  "file": "freddie_mercury.json",  "song_count": 20},
+    {"reference_artist_id": "elvis_presley",    "file": "elvis_presley.json",    "song_count": 20},
+    {"reference_artist_id": "the_beatles",      "file": "the_beatles.json",      "song_count": 20},
+    {"reference_artist_id": "whitney_houston",  "file": "whitney_houston.json",  "song_count": 20},
+    {"reference_artist_id": "adele",            "file": "adele.json",            "song_count": 20},
+    {"reference_artist_id": "taylor_swift",     "file": "taylor_swift.json",     "song_count": 20},
+    {"reference_artist_id": "ed_sheeran",       "file": "ed_sheeran.json",       "song_count": 20},
+    {"reference_artist_id": "bruno_mars",       "file": "bruno_mars.json",       "song_count": 20},
+    {"reference_artist_id": "justin_bieber",    "file": "justin_bieber.json",    "song_count": 20},
+    {"reference_artist_id": "rihanna",          "file": "rihanna.json",          "song_count": 20},
+    {"reference_artist_id": "shakira",          "file": "shakira.json",          "song_count": 20},
+    {"reference_artist_id": "eminem",           "file": "eminem.json",           "song_count": 20},
+    {"reference_artist_id": "celine_dion",      "file": "celine_dion.json",      "song_count": 20},
+    {"reference_artist_id": "madonna",          "file": "madonna.json",          "song_count": 20},
+    {"reference_artist_id": "arijit_singh",     "file": "arijit_singh.json",     "song_count": 20},
+    {"reference_artist_id": "kishore_kumar",    "file": "kishore_kumar.json",    "song_count": 20},
+    {"reference_artist_id": "lata_mangeshkar",  "file": "lata_mangeshkar.json",  "song_count": 20},
+    {"reference_artist_id": "asha_bhosle",      "file": "asha_bhosle.json",      "song_count": 20},
+    {"reference_artist_id": "bts",              "file": "bts.json",              "song_count": 20}
+  ]
+}

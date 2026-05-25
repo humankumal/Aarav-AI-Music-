@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "bruno_mars",
+  "reference_artist_name": "Bruno Mars",
+  "origin": "USA",
+  "primary_language": "english",
+  "genre_tags": ["pop", "r&b", "funk", "soul"],
+  "songs": [
+    {"song_id": "bru_001", "title": "Just The Way You Are"},
+    {"song_id": "bru_002", "title": "Grenade"},
+    {"song_id": "bru_003", "title": "Uptown Funk"},
+    {"song_id": "bru_004", "title": "Locked Out Of Heaven"},
+    {"song_id": "bru_005", "title": "24K Magic"},
+    {"song_id": "bru_006", "title": "When I Was Your Man"},
+    {"song_id": "bru_007", "title": "That's What I Like"},
+    {"song_id": "bru_008", "title": "Talking To The Moon"},
+    {"song_id": "bru_009", "title": "Treasure"},
+    {"song_id": "bru_010", "title": "Versace On The Floor"},
+    {"song_id": "bru_011", "title": "Finesse"},
+    {"song_id": "bru_012", "title": "Marry You"},
+    {"song_id": "bru_013", "title": "Count On Me"},
+    {"song_id": "bru_014", "title": "Runaway Baby"},
+    {"song_id": "bru_015", "title": "The Lazy Song"},
+    {"song_id": "bru_016", "title": "Gorilla"},
+    {"song_id": "bru_017", "title": "It Will Rain"},
+    {"song_id": "bru_018", "title": "Skate"},
+    {"song_id": "bru_019", "title": "Leave The Door Open"},
+    {"song_id": "bru_020", "title": "Smokin Out The Window"}
+  ]
+}

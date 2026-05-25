@@ -1,0 +1,27 @@
+{
+  "catalog_type": "nepali",
+  "total_artists": 20,
+  "total_songs": 400,
+  "artists": [
+    {"reference_artist_id": "narayan_gopal",    "file": "narayan_gopal.json",    "song_count": 20},
+    {"reference_artist_id": "bhakta_raj_acharya","file": "bhakta_raj_acharya.json","song_count": 20},
+    {"reference_artist_id": "aruna_lama",        "file": "aruna_lama.json",        "song_count": 20},
+    {"reference_artist_id": "prem_dhoj_pradhan", "file": "prem_dhoj_pradhan.json", "song_count": 20},
+    {"reference_artist_id": "ram_krishna_dhakal","file": "ram_krishna_dhakal.json","song_count": 20},
+    {"reference_artist_id": "deep_shrestha",     "file": "deep_shrestha.json",     "song_count": 20},
+    {"reference_artist_id": "karna_das",         "file": "karna_das.json",         "song_count": 20},
+    {"reference_artist_id": "sabin_rai",         "file": "sabin_rai.json",         "song_count": 20},
+    {"reference_artist_id": "1974_ad",           "file": "1974_ad.json",           "song_count": 20},
+    {"reference_artist_id": "yash_kumar",        "file": "yash_kumar.json",        "song_count": 20},
+    {"reference_artist_id": "anju_panta",        "file": "anju_panta.json",        "song_count": 20},
+    {"reference_artist_id": "bishnu_majhi",      "file": "bishnu_majhi.json",      "song_count": 20},
+    {"reference_artist_id": "raju_lama",         "file": "raju_lama.json",         "song_count": 20},
+    {"reference_artist_id": "sugam_pokhrel",     "file": "sugam_pokhrel.json",     "song_count": 20},
+    {"reference_artist_id": "swoopna_suman",     "file": "swoopna_suman.json",     "song_count": 20},
+    {"reference_artist_id": "sajjan_raj_vaidya", "file": "sajjan_raj_vaidya.json", "song_count": 20},
+    {"reference_artist_id": "bartika_eam_rai",   "file": "bartika_eam_rai.json",   "song_count": 20},
+    {"reference_artist_id": "ani_choying_drolma","file": "ani_choying_drolma.json","song_count": 20},
+    {"reference_artist_id": "nabin_k_bhattarai", "file": "nabin_k_bhattarai.json", "song_count": 20},
+    {"reference_artist_id": "om_bikram_bista",   "file": "om_bikram_bista.json",   "song_count": 20}
+  ]
+}

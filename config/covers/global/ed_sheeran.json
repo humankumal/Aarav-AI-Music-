@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "ed_sheeran",
+  "reference_artist_name": "Ed Sheeran",
+  "origin": "UK",
+  "primary_language": "english",
+  "genre_tags": ["pop", "acoustic pop", "singer-songwriter", "folk pop"],
+  "songs": [
+    {"song_id": "esh_001", "title": "Shape Of You"},
+    {"song_id": "esh_002", "title": "Perfect"},
+    {"song_id": "esh_003", "title": "Thinking Out Loud"},
+    {"song_id": "esh_004", "title": "Photograph"},
+    {"song_id": "esh_005", "title": "Castle On The Hill"},
+    {"song_id": "esh_006", "title": "Galway Girl"},
+    {"song_id": "esh_007", "title": "Bad Habits"},
+    {"song_id": "esh_008", "title": "Shivers"},
+    {"song_id": "esh_009", "title": "Lego House"},
+    {"song_id": "esh_010", "title": "Give Me Love"},
+    {"song_id": "esh_011", "title": "Eyes Closed"},
+    {"song_id": "esh_012", "title": "Happier"},
+    {"song_id": "esh_013", "title": "Visiting Hours"},
+    {"song_id": "esh_014", "title": "Sing"},
+    {"song_id": "esh_015", "title": "Beautiful People"},
+    {"song_id": "esh_016", "title": "Dive"},
+    {"song_id": "esh_017", "title": "Nancy Mulligan"},
+    {"song_id": "esh_018", "title": "Tenerife Sea"},
+    {"song_id": "esh_019", "title": "Afterglow"},
+    {"song_id": "esh_020", "title": "Boat"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "lata_mangeshkar",
+  "reference_artist_name": "Lata Mangeshkar",
+  "origin": "India",
+  "primary_language": "hindi",
+  "genre_tags": ["bollywood classic", "hindi film music", "classical", "devotional"],
+  "songs": [
+    {"song_id": "latm_001", "title": "Lag Ja Gale"},
+    {"song_id": "latm_002", "title": "Tere Bina Zindagi"},
+    {"song_id": "latm_003", "title": "Ajeeb Dastan Hai Yeh"},
+    {"song_id": "latm_004", "title": "Pyar Kiya To Darna Kya"},
+    {"song_id": "latm_005", "title": "Luka Chuppi"},
+    {"song_id": "latm_006", "title": "Ek Pyar Ka Nagma Hai"},
+    {"song_id": "latm_007", "title": "Tujhse Naraz Nahi"},
+    {"song_id": "latm_008", "title": "Kabhi Khushi Kabhie Gham"},
+    {"song_id": "latm_009", "title": "Bahon Mein Chale Aao"},
+    {"song_id": "latm_010", "title": "Satyam Shivam Sundaram"},
+    {"song_id": "latm_011", "title": "Aap Ki Nazron Ne Samjha"},
+    {"song_id": "latm_012", "title": "Mere Khwabon Mein"},
+    {"song_id": "latm_013", "title": "Dil To Pagal Hai"},
+    {"song_id": "latm_014", "title": "Jiya Jale"},
+    {"song_id": "latm_015", "title": "Humko Humise Chura Lo"},
+    {"song_id": "latm_016", "title": "Tere Liye"},
+    {"song_id": "latm_017", "title": "Yeh Galiyan Yeh Chaubara"},
+    {"song_id": "latm_018", "title": "Sheesha Ho Ya Dil Ho"},
+    {"song_id": "latm_019", "title": "Bindiya Chamkegi"},
+    {"song_id": "latm_020", "title": "Naam Gum Jayega"}
+  ]
+}

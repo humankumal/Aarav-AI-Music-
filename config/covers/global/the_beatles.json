@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "the_beatles",
+  "reference_artist_name": "The Beatles",
+  "origin": "UK",
+  "primary_language": "english",
+  "genre_tags": ["rock", "pop rock", "psychedelic rock", "british invasion"],
+  "songs": [
+    {"song_id": "tb_001", "title": "Hey Jude"},
+    {"song_id": "tb_002", "title": "Let It Be"},
+    {"song_id": "tb_003", "title": "Yesterday"},
+    {"song_id": "tb_004", "title": "Come Together"},
+    {"song_id": "tb_005", "title": "Here Comes The Sun"},
+    {"song_id": "tb_006", "title": "Something"},
+    {"song_id": "tb_007", "title": "Help!"},
+    {"song_id": "tb_008", "title": "Blackbird"},
+    {"song_id": "tb_009", "title": "Penny Lane"},
+    {"song_id": "tb_010", "title": "All You Need Is Love"},
+    {"song_id": "tb_011", "title": "Eleanor Rigby"},
+    {"song_id": "tb_012", "title": "In My Life"},
+    {"song_id": "tb_013", "title": "Twist And Shout"},
+    {"song_id": "tb_014", "title": "A Day In The Life"},
+    {"song_id": "tb_015", "title": "Strawberry Fields Forever"},
+    {"song_id": "tb_016", "title": "Yellow Submarine"},
+    {"song_id": "tb_017", "title": "Lucy In The Sky With Diamonds"},
+    {"song_id": "tb_018", "title": "While My Guitar Gently Weeps"},
+    {"song_id": "tb_019", "title": "I Want To Hold Your Hand"},
+    {"song_id": "tb_020", "title": "Across The Universe"}
+  ]
+}

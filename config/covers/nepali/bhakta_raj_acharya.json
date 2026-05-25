@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "bhakta_raj_acharya",
+  "reference_artist_name": "Bhakta Raj Acharya",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["sentimental nepali", "ghazal", "folk"],
+  "songs": [
+    {"song_id": "bra_001", "title": "Hajar Sapana"},
+    {"song_id": "bra_002", "title": "Mutu Jali Rahecha"},
+    {"song_id": "bra_003", "title": "Jati Chot Dinchau"},
+    {"song_id": "bra_004", "title": "Priya Timro"},
+    {"song_id": "bra_005", "title": "Maya Meri Sanjhani"},
+    {"song_id": "bra_006", "title": "Kohi Bata"},
+    {"song_id": "bra_007", "title": "Bhet Huda"},
+    {"song_id": "bra_008", "title": "Tadha Tadha Janu Cha"},
+    {"song_id": "bra_009", "title": "Ekdin Maile"},
+    {"song_id": "bra_010", "title": "Bideshiyera Gain"},
+    {"song_id": "bra_011", "title": "Timro Maya"},
+    {"song_id": "bra_012", "title": "Sagar Sari"},
+    {"song_id": "bra_013", "title": "Mero Sathi Haru"},
+    {"song_id": "bra_014", "title": "Aaja Bholi"},
+    {"song_id": "bra_015", "title": "Rato Rani"},
+    {"song_id": "bra_016", "title": "Kahile Kahi"},
+    {"song_id": "bra_017", "title": "Phool Ko Thunga"},
+    {"song_id": "bra_018", "title": "Ma Ta Marchu Ki"},
+    {"song_id": "bra_019", "title": "Yo Mutu"},
+    {"song_id": "bra_020", "title": "Timi Bina"}
+  ]
+}

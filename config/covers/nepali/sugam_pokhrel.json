@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "sugam_pokhrel",
+  "reference_artist_name": "Sugam Pokhrel",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["modern nepali pop", "acoustic", "romantic"],
+  "songs": [
+    {"song_id": "sp_001", "title": "Farki Farki"},
+    {"song_id": "sp_002", "title": "K Yo Maya Ho"},
+    {"song_id": "sp_003", "title": "Mero Sansar"},
+    {"song_id": "sp_004", "title": "Jadai Chu Tadha"},
+    {"song_id": "sp_005", "title": "Timi Ma Bhanda"},
+    {"song_id": "sp_006", "title": "Maya Ko Bato"},
+    {"song_id": "sp_007", "title": "Timro Yaad"},
+    {"song_id": "sp_008", "title": "Parkhai"},
+    {"song_id": "sp_009", "title": "Jindagi"},
+    {"song_id": "sp_010", "title": "Chiso Chiso"},
+    {"song_id": "sp_011", "title": "Samjhana"},
+    {"song_id": "sp_012", "title": "Aankhama"},
+    {"song_id": "sp_013", "title": "Timi Nai"},
+    {"song_id": "sp_014", "title": "Yo Mann"},
+    {"song_id": "sp_015", "title": "Kasto Maya"},
+    {"song_id": "sp_016", "title": "Sapanima"},
+    {"song_id": "sp_017", "title": "Timro Maya"},
+    {"song_id": "sp_018", "title": "Mero Geet"},
+    {"song_id": "sp_019", "title": "Dui Din Ko"},
+    {"song_id": "sp_020", "title": "Aaja Bholi"}
+  ]
+}

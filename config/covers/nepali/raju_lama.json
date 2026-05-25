@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "raju_lama",
+  "reference_artist_name": "Raju Lama",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali folk pop", "sentimental", "romantic"],
+  "songs": [
+    {"song_id": "rl_001", "title": "Syabru Ko Chiso Pani"},
+    {"song_id": "rl_002", "title": "Parkhai Ma"},
+    {"song_id": "rl_003", "title": "Halla Chalecha"},
+    {"song_id": "rl_004", "title": "Timilai Dekhera"},
+    {"song_id": "rl_005", "title": "Fewa Talma"},
+    {"song_id": "rl_006", "title": "Saili"},
+    {"song_id": "rl_007", "title": "Maya"},
+    {"song_id": "rl_008", "title": "Timro Yaad"},
+    {"song_id": "rl_009", "title": "Aankhama"},
+    {"song_id": "rl_010", "title": "Sapanima"},
+    {"song_id": "rl_011", "title": "Jindagi"},
+    {"song_id": "rl_012", "title": "Samjhana"},
+    {"song_id": "rl_013", "title": "Timi Nai"},
+    {"song_id": "rl_014", "title": "Chiso Hawa"},
+    {"song_id": "rl_015", "title": "Yo Mann"},
+    {"song_id": "rl_016", "title": "Timro Maya"},
+    {"song_id": "rl_017", "title": "Parkhai"},
+    {"song_id": "rl_018", "title": "Mero Geet"},
+    {"song_id": "rl_019", "title": "Dui Din Ko"},
+    {"song_id": "rl_020", "title": "Aaja Bholi"}
+  ]
+}

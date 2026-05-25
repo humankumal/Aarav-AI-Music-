@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "adele",
+  "reference_artist_name": "Adele",
+  "origin": "UK",
+  "primary_language": "english",
+  "genre_tags": ["soul pop", "pop", "r&b", "ballad"],
+  "songs": [
+    {"song_id": "ade_001", "title": "Hello"},
+    {"song_id": "ade_002", "title": "Someone Like You"},
+    {"song_id": "ade_003", "title": "Rolling In The Deep"},
+    {"song_id": "ade_004", "title": "Easy On Me"},
+    {"song_id": "ade_005", "title": "Skyfall"},
+    {"song_id": "ade_006", "title": "Set Fire To The Rain"},
+    {"song_id": "ade_007", "title": "When We Were Young"},
+    {"song_id": "ade_008", "title": "Chasing Pavements"},
+    {"song_id": "ade_009", "title": "Turning Tables"},
+    {"song_id": "ade_010", "title": "Water Under The Bridge"},
+    {"song_id": "ade_011", "title": "Send My Love"},
+    {"song_id": "ade_012", "title": "Make You Feel My Love"},
+    {"song_id": "ade_013", "title": "Oh My God"},
+    {"song_id": "ade_014", "title": "Rumour Has It"},
+    {"song_id": "ade_015", "title": "To Be Loved"},
+    {"song_id": "ade_016", "title": "Love In The Dark"},
+    {"song_id": "ade_017", "title": "Hometown Glory"},
+    {"song_id": "ade_018", "title": "I Drink Wine"},
+    {"song_id": "ade_019", "title": "Remedy"},
+    {"song_id": "ade_020", "title": "Can I Get It"}
+  ]
+}

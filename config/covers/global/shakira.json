@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "shakira",
+  "reference_artist_name": "Shakira",
+  "origin": "Colombia",
+  "primary_language": "spanish",
+  "genre_tags": ["latin pop", "pop", "dance pop", "world music"],
+  "songs": [
+    {"song_id": "shk_001", "title": "Hips Don't Lie"},
+    {"song_id": "shk_002", "title": "Waka Waka"},
+    {"song_id": "shk_003", "title": "Whenever Wherever"},
+    {"song_id": "shk_004", "title": "Chantaje"},
+    {"song_id": "shk_005", "title": "She Wolf"},
+    {"song_id": "shk_006", "title": "La Tortura"},
+    {"song_id": "shk_007", "title": "Monotonia"},
+    {"song_id": "shk_008", "title": "Te Felicito"},
+    {"song_id": "shk_009", "title": "Loca"},
+    {"song_id": "shk_010", "title": "Objection"},
+    {"song_id": "shk_011", "title": "Underneath Your Clothes"},
+    {"song_id": "shk_012", "title": "Empire"},
+    {"song_id": "shk_013", "title": "Addicted To You"},
+    {"song_id": "shk_014", "title": "Try Everything"},
+    {"song_id": "shk_015", "title": "Ojos Asi"},
+    {"song_id": "shk_016", "title": "Ciega Sordomuda"},
+    {"song_id": "shk_017", "title": "Antologia"},
+    {"song_id": "shk_018", "title": "Me Enamore"},
+    {"song_id": "shk_019", "title": "Suerte"},
+    {"song_id": "shk_020", "title": "Acrostico"}
+  ]
+}

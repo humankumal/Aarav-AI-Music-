@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "kishore_kumar",
+  "reference_artist_name": "Kishore Kumar",
+  "origin": "India",
+  "primary_language": "hindi",
+  "genre_tags": ["bollywood classic", "hindi film music", "playback singing", "romantic"],
+  "songs": [
+    {"song_id": "kkum_001", "title": "Pal Pal Dil Ke Paas"},
+    {"song_id": "kkum_002", "title": "Mere Sapno Ki Rani"},
+    {"song_id": "kkum_003", "title": "Roop Tera Mastana"},
+    {"song_id": "kkum_004", "title": "O Saathi Re"},
+    {"song_id": "kkum_005", "title": "Zindagi Ek Safar"},
+    {"song_id": "kkum_006", "title": "Chingari Koi Bhadke"},
+    {"song_id": "kkum_007", "title": "Humein Tumse Pyar Kitna"},
+    {"song_id": "kkum_008", "title": "Yeh Shaam Mastani"},
+    {"song_id": "kkum_009", "title": "Ek Ajnabee Haseena Se"},
+    {"song_id": "kkum_010", "title": "Rimjhim Gire Sawan"},
+    {"song_id": "kkum_011", "title": "Dil Kya Kare"},
+    {"song_id": "kkum_012", "title": "Khaike Paan Banaraswala"},
+    {"song_id": "kkum_013", "title": "Musafir Hoon Yaaron"},
+    {"song_id": "kkum_014", "title": "O Mere Dil Ke Chain"},
+    {"song_id": "kkum_015", "title": "Aanewala Pal"},
+    {"song_id": "kkum_016", "title": "Dream Girl"},
+    {"song_id": "kkum_017", "title": "Neele Neele Ambar Par"},
+    {"song_id": "kkum_018", "title": "Pag Ghungroo"},
+    {"song_id": "kkum_019", "title": "Tere Bina Zindagi Se"},
+    {"song_id": "kkum_020", "title": "Kehdoon Tumhe"}
+  ]
+}

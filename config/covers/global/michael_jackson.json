@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "michael_jackson",
+  "reference_artist_name": "Michael Jackson",
+  "origin": "USA",
+  "primary_language": "english",
+  "genre_tags": ["pop", "r&b", "dance pop", "soul"],
+  "songs": [
+    {"song_id": "mj_001", "title": "Billie Jean"},
+    {"song_id": "mj_002", "title": "Thriller"},
+    {"song_id": "mj_003", "title": "Beat It"},
+    {"song_id": "mj_004", "title": "Smooth Criminal"},
+    {"song_id": "mj_005", "title": "Heal The World"},
+    {"song_id": "mj_006", "title": "Black Or White"},
+    {"song_id": "mj_007", "title": "Bad"},
+    {"song_id": "mj_008", "title": "Remember The Time"},
+    {"song_id": "mj_009", "title": "Earth Song"},
+    {"song_id": "mj_010", "title": "Man In The Mirror"},
+    {"song_id": "mj_011", "title": "Dirty Diana"},
+    {"song_id": "mj_012", "title": "Dangerous"},
+    {"song_id": "mj_013", "title": "Human Nature"},
+    {"song_id": "mj_014", "title": "The Way You Make Me Feel"},
+    {"song_id": "mj_015", "title": "You Are Not Alone"},
+    {"song_id": "mj_016", "title": "Ben"},
+    {"song_id": "mj_017", "title": "Rock With You"},
+    {"song_id": "mj_018", "title": "Don't Stop Till You Get Enough"},
+    {"song_id": "mj_019", "title": "Wanna Be Startin' Somethin'"},
+    {"song_id": "mj_020", "title": "They Don't Care About Us"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "whitney_houston",
+  "reference_artist_name": "Whitney Houston",
+  "origin": "USA",
+  "primary_language": "english",
+  "genre_tags": ["r&b", "pop", "soul", "gospel"],
+  "songs": [
+    {"song_id": "wh_001", "title": "I Will Always Love You"},
+    {"song_id": "wh_002", "title": "Greatest Love Of All"},
+    {"song_id": "wh_003", "title": "I Wanna Dance With Somebody"},
+    {"song_id": "wh_004", "title": "One Moment In Time"},
+    {"song_id": "wh_005", "title": "Saving All My Love"},
+    {"song_id": "wh_006", "title": "Run To You"},
+    {"song_id": "wh_007", "title": "How Will I Know"},
+    {"song_id": "wh_008", "title": "Higher Love"},
+    {"song_id": "wh_009", "title": "Didn't We Almost Have It All"},
+    {"song_id": "wh_010", "title": "I'm Every Woman"},
+    {"song_id": "wh_011", "title": "Exhale"},
+    {"song_id": "wh_012", "title": "Where Do Broken Hearts Go"},
+    {"song_id": "wh_013", "title": "My Love Is Your Love"},
+    {"song_id": "wh_014", "title": "Miracle"},
+    {"song_id": "wh_015", "title": "Heartbreak Hotel"},
+    {"song_id": "wh_016", "title": "All The Man That I Need"},
+    {"song_id": "wh_017", "title": "Step By Step"},
+    {"song_id": "wh_018", "title": "So Emotional"},
+    {"song_id": "wh_019", "title": "Count On Me"},
+    {"song_id": "wh_020", "title": "Queen Of The Night"}
+  ]
+}

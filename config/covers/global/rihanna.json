@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "rihanna",
+  "reference_artist_name": "Rihanna",
+  "origin": "Barbados",
+  "primary_language": "english",
+  "genre_tags": ["pop", "r&b", "dancehall", "dance pop"],
+  "songs": [
+    {"song_id": "rih_001", "title": "Diamonds"},
+    {"song_id": "rih_002", "title": "Umbrella"},
+    {"song_id": "rih_003", "title": "Stay"},
+    {"song_id": "rih_004", "title": "We Found Love"},
+    {"song_id": "rih_005", "title": "Work"},
+    {"song_id": "rih_006", "title": "Only Girl"},
+    {"song_id": "rih_007", "title": "Love On The Brain"},
+    {"song_id": "rih_008", "title": "Needed Me"},
+    {"song_id": "rih_009", "title": "Disturbia"},
+    {"song_id": "rih_010", "title": "Unfaithful"},
+    {"song_id": "rih_011", "title": "Rude Boy"},
+    {"song_id": "rih_012", "title": "Take A Bow"},
+    {"song_id": "rih_013", "title": "Pon De Replay"},
+    {"song_id": "rih_014", "title": "Kiss It Better"},
+    {"song_id": "rih_015", "title": "California King Bed"},
+    {"song_id": "rih_016", "title": "Russian Roulette"},
+    {"song_id": "rih_017", "title": "What's My Name"},
+    {"song_id": "rih_018", "title": "FourFiveSeconds"},
+    {"song_id": "rih_019", "title": "Lift Me Up"},
+    {"song_id": "rih_020", "title": "Te Amo"}
+  ]
+}

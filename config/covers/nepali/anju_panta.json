@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "anju_panta",
+  "reference_artist_name": "Anju Panta",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali pop", "female vocal", "emotional"],
+  "songs": [
+    {"song_id": "ap_001", "title": "Na Birse Timilai"},
+    {"song_id": "ap_002", "title": "Ma Ta Birsidinchu"},
+    {"song_id": "ap_003", "title": "Timi Bina"},
+    {"song_id": "ap_004", "title": "Hijo Arkai Sanga"},
+    {"song_id": "ap_005", "title": "Birsana Sakina"},
+    {"song_id": "ap_006", "title": "Timilai Samjhera"},
+    {"song_id": "ap_007", "title": "Aaja Bholi"},
+    {"song_id": "ap_008", "title": "Maya"},
+    {"song_id": "ap_009", "title": "Timro Yaad"},
+    {"song_id": "ap_010", "title": "Sapanima"},
+    {"song_id": "ap_011", "title": "Parkhai"},
+    {"song_id": "ap_012", "title": "Jindagi"},
+    {"song_id": "ap_013", "title": "Chiso Chiso"},
+    {"song_id": "ap_014", "title": "Samjhana"},
+    {"song_id": "ap_015", "title": "Timi Nai"},
+    {"song_id": "ap_016", "title": "Yo Mann"},
+    {"song_id": "ap_017", "title": "Kasto Maya"},
+    {"song_id": "ap_018", "title": "Aankhama"},
+    {"song_id": "ap_019", "title": "Timro Maya"},
+    {"song_id": "ap_020", "title": "Mero Geet"}
+  ]
+}

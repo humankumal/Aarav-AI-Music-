@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "deep_shrestha",
+  "reference_artist_name": "Deep Shrestha",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["contemporary nepali pop", "emotional ballad"],
+  "songs": [
+    {"song_id": "ds_001", "title": "Biteka Kura"},
+    {"song_id": "ds_002", "title": "Ma Pathar Ko Devata"},
+    {"song_id": "ds_003", "title": "Har Raat Sapani Ma"},
+    {"song_id": "ds_004", "title": "Timi Aayau"},
+    {"song_id": "ds_005", "title": "Kasto Rahecha"},
+    {"song_id": "ds_006", "title": "Mero Geet"},
+    {"song_id": "ds_007", "title": "Yo Mutu"},
+    {"song_id": "ds_008", "title": "Timilai Samjhi"},
+    {"song_id": "ds_009", "title": "Maya Ko Dori"},
+    {"song_id": "ds_010", "title": "Tadha Tadha"},
+    {"song_id": "ds_011", "title": "Samjhanama"},
+    {"song_id": "ds_012", "title": "Aankhama"},
+    {"song_id": "ds_013", "title": "Timro Yaad"},
+    {"song_id": "ds_014", "title": "Kati Mitho"},
+    {"song_id": "ds_015", "title": "Jindagi"},
+    {"song_id": "ds_016", "title": "Timi Nai"},
+    {"song_id": "ds_017", "title": "Kehi Kura"},
+    {"song_id": "ds_018", "title": "Phool Haru"},
+    {"song_id": "ds_019", "title": "Timi Bina"},
+    {"song_id": "ds_020", "title": "Mero Sansar"}
+  ]
+}

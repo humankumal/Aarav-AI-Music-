@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "sajjan_raj_vaidya",
+  "reference_artist_name": "Sajjan Raj Vaidya",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali indie pop", "acoustic", "contemporary folk"],
+  "songs": [
+    {"song_id": "srv_001", "title": "Hataarindai Bataasindai"},
+    {"song_id": "srv_002", "title": "Chitthi Bhitra"},
+    {"song_id": "srv_003", "title": "Mooskaan"},
+    {"song_id": "srv_004", "title": "Lukaamaari"},
+    {"song_id": "srv_005", "title": "Dhairya"},
+    {"song_id": "srv_006", "title": "Parkhai"},
+    {"song_id": "srv_007", "title": "Maya"},
+    {"song_id": "srv_008", "title": "Timro Yaad"},
+    {"song_id": "srv_009", "title": "Samjhana"},
+    {"song_id": "srv_010", "title": "Chiso Hawa"},
+    {"song_id": "srv_011", "title": "Yo Mann"},
+    {"song_id": "srv_012", "title": "Timi Nai"},
+    {"song_id": "srv_013", "title": "Sapanima"},
+    {"song_id": "srv_014", "title": "Aankhama"},
+    {"song_id": "srv_015", "title": "Jindagi"},
+    {"song_id": "srv_016", "title": "Kasto Maya"},
+    {"song_id": "srv_017", "title": "Mero Geet"},
+    {"song_id": "srv_018", "title": "Timro Maya"},
+    {"song_id": "srv_019", "title": "Dui Din Ko"},
+    {"song_id": "srv_020", "title": "Aaja Bholi"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "aruna_lama",
+  "reference_artist_name": "Aruna Lama",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["folk pop", "nepali folk", "romantic"],
+  "songs": [
+    {"song_id": "al_001", "title": "Pohor Saal Khusi"},
+    {"song_id": "al_002", "title": "Eh Kancha"},
+    {"song_id": "al_003", "title": "Chautarima"},
+    {"song_id": "al_004", "title": "Phool Lai Sodhey"},
+    {"song_id": "al_005", "title": "Hera Na Hera Kancha"},
+    {"song_id": "al_006", "title": "Udi Jaun Bhane"},
+    {"song_id": "al_007", "title": "Aankhako Need"},
+    {"song_id": "al_008", "title": "Bihan Bhayo"},
+    {"song_id": "al_009", "title": "Kasto Cha Timro"},
+    {"song_id": "al_010", "title": "Ma Roye Pani"},
+    {"song_id": "al_011", "title": "Timro Samjhanama"},
+    {"song_id": "al_012", "title": "Simali Chhaya"},
+    {"song_id": "al_013", "title": "Mero Mann"},
+    {"song_id": "al_014", "title": "Dherai Maya"},
+    {"song_id": "al_015", "title": "Pahad Ko Chiso"},
+    {"song_id": "al_016", "title": "Timi Aayau"},
+    {"song_id": "al_017", "title": "Batas Le"},
+    {"song_id": "al_018", "title": "Nilo Akash"},
+    {"song_id": "al_019", "title": "Jindagi Ko"},
+    {"song_id": "al_020", "title": "Sapanima"}
+  ]
+}

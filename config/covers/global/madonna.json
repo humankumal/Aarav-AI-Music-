@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "madonna",
+  "reference_artist_name": "Madonna",
+  "origin": "USA",
+  "primary_language": "english",
+  "genre_tags": ["pop", "dance pop", "electronic", "new wave"],
+  "songs": [
+    {"song_id": "mad_001", "title": "Like A Prayer"},
+    {"song_id": "mad_002", "title": "Vogue"},
+    {"song_id": "mad_003", "title": "Frozen"},
+    {"song_id": "mad_004", "title": "Material Girl"},
+    {"song_id": "mad_005", "title": "Hung Up"},
+    {"song_id": "mad_006", "title": "La Isla Bonita"},
+    {"song_id": "mad_007", "title": "Papa Don't Preach"},
+    {"song_id": "mad_008", "title": "Holiday"},
+    {"song_id": "mad_009", "title": "Into The Groove"},
+    {"song_id": "mad_010", "title": "Music"},
+    {"song_id": "mad_011", "title": "Like A Virgin"},
+    {"song_id": "mad_012", "title": "Ray Of Light"},
+    {"song_id": "mad_013", "title": "Open Your Heart"},
+    {"song_id": "mad_014", "title": "Take A Bow"},
+    {"song_id": "mad_015", "title": "Express Yourself"},
+    {"song_id": "mad_016", "title": "Crazy For You"},
+    {"song_id": "mad_017", "title": "Borderline"},
+    {"song_id": "mad_018", "title": "Live To Tell"},
+    {"song_id": "mad_019", "title": "Sorry"},
+    {"song_id": "mad_020", "title": "Celebration"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "ani_choying_drolma",
+  "reference_artist_name": "Ani Choying Drolma",
+  "origin": "Nepal",
+  "primary_language": "tibetan_nepali",
+  "genre_tags": ["devotional", "buddhist", "world music", "spiritual"],
+  "songs": [
+    {"song_id": "acd_001", "title": "Phool Ko Aankhama"},
+    {"song_id": "acd_002", "title": "Om Mani Padme Hum"},
+    {"song_id": "acd_003", "title": "Himalaya"},
+    {"song_id": "acd_004", "title": "Compassion"},
+    {"song_id": "acd_005", "title": "Choying Bhajans"},
+    {"song_id": "acd_006", "title": "Tara Mantra"},
+    {"song_id": "acd_007", "title": "Buddhist Prayer"},
+    {"song_id": "acd_008", "title": "Namo Buddha"},
+    {"song_id": "acd_009", "title": "Peace Chant"},
+    {"song_id": "acd_010", "title": "Healing Song"},
+    {"song_id": "acd_011", "title": "Timro Maya"},
+    {"song_id": "acd_012", "title": "Samjhana"},
+    {"song_id": "acd_013", "title": "Aankhama"},
+    {"song_id": "acd_014", "title": "Yo Mann"},
+    {"song_id": "acd_015", "title": "Jindagi"},
+    {"song_id": "acd_016", "title": "Timi Nai"},
+    {"song_id": "acd_017", "title": "Sapanima"},
+    {"song_id": "acd_018", "title": "Chiso Hawa"},
+    {"song_id": "acd_019", "title": "Mero Geet"},
+    {"song_id": "acd_020", "title": "Parkhai"}
+  ]
+}

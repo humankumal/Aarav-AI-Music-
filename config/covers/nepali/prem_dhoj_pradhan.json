@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "prem_dhoj_pradhan",
+  "reference_artist_name": "Prem Dhoj Pradhan",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["classical nepali", "folk", "traditional"],
+  "songs": [
+    {"song_id": "pdp_001", "title": "Rajamati Kumati"},
+    {"song_id": "pdp_002", "title": "Ghumti Ma Naau Hai"},
+    {"song_id": "pdp_003", "title": "Para Laijau Phool Haru"},
+    {"song_id": "pdp_004", "title": "Timi Aaune Bato"},
+    {"song_id": "pdp_005", "title": "Maya Namara"},
+    {"song_id": "pdp_006", "title": "Yo Pari"},
+    {"song_id": "pdp_007", "title": "Timi Lai Achha"},
+    {"song_id": "pdp_008", "title": "Tadha Bhaye Pani"},
+    {"song_id": "pdp_009", "title": "Ma Ta Door Dekhi"},
+    {"song_id": "pdp_010", "title": "Bholi Ta Bholi"},
+    {"song_id": "pdp_011", "title": "Ke Bhanu Ma"},
+    {"song_id": "pdp_012", "title": "Mero Geet"},
+    {"song_id": "pdp_013", "title": "Aakash Ko Tara"},
+    {"song_id": "pdp_014", "title": "Mero Pyaro"},
+    {"song_id": "pdp_015", "title": "Timro Yaad"},
+    {"song_id": "pdp_016", "title": "Kasto Ramailo"},
+    {"song_id": "pdp_017", "title": "Suna Suna"},
+    {"song_id": "pdp_018", "title": "Maya Ko Sansar"},
+    {"song_id": "pdp_019", "title": "Sagar Pari"},
+    {"song_id": "pdp_020", "title": "Timi Nai"}
+  ]
+}

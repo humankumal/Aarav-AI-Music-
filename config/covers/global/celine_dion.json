@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "celine_dion",
+  "reference_artist_name": "Celine Dion",
+  "origin": "Canada",
+  "primary_language": "english",
+  "genre_tags": ["pop", "power ballad", "adult contemporary", "r&b"],
+  "songs": [
+    {"song_id": "celd_001", "title": "My Heart Will Go On"},
+    {"song_id": "celd_002", "title": "Because You Loved Me"},
+    {"song_id": "celd_003", "title": "The Power Of Love"},
+    {"song_id": "celd_004", "title": "It's All Coming Back To Me"},
+    {"song_id": "celd_005", "title": "Ashes"},
+    {"song_id": "celd_006", "title": "I'm Alive"},
+    {"song_id": "celd_007", "title": "All By Myself"},
+    {"song_id": "celd_008", "title": "A New Day Has Come"},
+    {"song_id": "celd_009", "title": "Beauty And The Beast"},
+    {"song_id": "celd_010", "title": "To Love You More"},
+    {"song_id": "celd_011", "title": "Think Twice"},
+    {"song_id": "celd_012", "title": "That's The Way It Is"},
+    {"song_id": "celd_013", "title": "Immortality"},
+    {"song_id": "celd_014", "title": "The Prayer"},
+    {"song_id": "celd_015", "title": "Falling Into You"},
+    {"song_id": "celd_016", "title": "Goodbye's The Saddest Word"},
+    {"song_id": "celd_017", "title": "Loved Me Back To Life"},
+    {"song_id": "celd_018", "title": "Seduces Me"},
+    {"song_id": "celd_019", "title": "Pour Que Tu M'aimes Encore"},
+    {"song_id": "celd_020", "title": "Where Does My Heart Beat Now"}
+  ]
+}

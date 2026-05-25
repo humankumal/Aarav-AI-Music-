@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "bartika_eam_rai",
+  "reference_artist_name": "Bartika Eam Rai",
+  "origin": "Nepal",
+  "primary_language": "nepali",
+  "genre_tags": ["nepali indie", "experimental pop", "alternative"],
+  "songs": [
+    {"song_id": "ber_001", "title": "Khai"},
+    {"song_id": "ber_002", "title": "Najeek"},
+    {"song_id": "ber_003", "title": "Bimbaakash"},
+    {"song_id": "ber_004", "title": "Timi Ra Ma"},
+    {"song_id": "ber_005", "title": "Taral"},
+    {"song_id": "ber_006", "title": "Maya"},
+    {"song_id": "ber_007", "title": "Timro Yaad"},
+    {"song_id": "ber_008", "title": "Jindagi"},
+    {"song_id": "ber_009", "title": "Samjhana"},
+    {"song_id": "ber_010", "title": "Aankhama"},
+    {"song_id": "ber_011", "title": "Yo Mann"},
+    {"song_id": "ber_012", "title": "Timi Nai"},
+    {"song_id": "ber_013", "title": "Sapanima"},
+    {"song_id": "ber_014", "title": "Chiso Hawa"},
+    {"song_id": "ber_015", "title": "Kasto Maya"},
+    {"song_id": "ber_016", "title": "Timro Maya"},
+    {"song_id": "ber_017", "title": "Parkhai"},
+    {"song_id": "ber_018", "title": "Mero Geet"},
+    {"song_id": "ber_019", "title": "Dui Din Ko"},
+    {"song_id": "ber_020", "title": "Aaja Bholi"}
+  ]
+}

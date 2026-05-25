@@ -1,0 +1,29 @@
+{
+  "reference_artist_id": "justin_bieber",
+  "reference_artist_name": "Justin Bieber",
+  "origin": "Canada",
+  "primary_language": "english",
+  "genre_tags": ["pop", "r&b", "dance pop", "teen pop"],
+  "songs": [
+    {"song_id": "jb_001", "title": "Baby"},
+    {"song_id": "jb_002", "title": "Sorry"},
+    {"song_id": "jb_003", "title": "Peaches"},
+    {"song_id": "jb_004", "title": "Love Yourself"},
+    {"song_id": "jb_005", "title": "Stay"},
+    {"song_id": "jb_006", "title": "Ghost"},
+    {"song_id": "jb_007", "title": "What Do You Mean"},
+    {"song_id": "jb_008", "title": "Yummy"},
+    {"song_id": "jb_009", "title": "Intentions"},
+    {"song_id": "jb_010", "title": "Never Say Never"},
+    {"song_id": "jb_011", "title": "Boyfriend"},
+    {"song_id": "jb_012", "title": "Beauty And A Beat"},
+    {"song_id": "jb_013", "title": "Company"},
+    {"song_id": "jb_014", "title": "Lonely"},
+    {"song_id": "jb_015", "title": "Holy"},
+    {"song_id": "jb_016", "title": "Anyone"},
+    {"song_id": "jb_017", "title": "Confident"},
+    {"song_id": "jb_018", "title": "As Long As You Love Me"},
+    {"song_id": "jb_019", "title": "Let Me Love You"},
+    {"song_id": "jb_020", "title": "Purpose"}
+  ]
+}
