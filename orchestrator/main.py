@@ -60,7 +60,31 @@ class FullPipelineRequest(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "service": "aarav-ai-music-orchestrator", "version": "0.2.0"}
+    return {"status": "ok", "service": "aarav-ai-music-orchestrator", "version": "0.3.0"}
+
+
+@app.get("/config/status")
+def get_config_status() -> dict[str, Any]:
+    """Return which required env vars are set (boolean flags only — never values)."""
+    env_keys = [
+        "GEMINI_API_KEY",
+        "FIREBASE_PROJECT_ID",
+        "FIREBASE_STORAGE_BUCKET",
+        "YOUTUBE_CREDENTIALS_PATH",
+        "GOOGLE_CLOUD_PROJECT",
+        "GOOGLE_APPLICATION_CREDENTIALS",
+    ]
+    flags = {key: bool(os.environ.get(key)) for key in env_keys}
+    mock_mode = not flags["GEMINI_API_KEY"]
+    environment = os.environ.get("ENVIRONMENT", "development")
+    require_approval = os.environ.get("REQUIRE_HUMAN_APPROVAL", "true").lower() != "false"
+    return {
+        "credentials": flags,
+        "mock_mode": mock_mode,
+        "environment": environment,
+        "require_human_approval": require_approval,
+        "all_required_set": all(flags[k] for k in ["GEMINI_API_KEY", "FIREBASE_PROJECT_ID", "GOOGLE_CLOUD_PROJECT"]),
+    }
 
 
 @app.post("/pipeline/run")

@@ -1,6 +1,6 @@
 import type {
   ArtistId, CatalogType, CatalogPage, CoverRunResult,
-  CoverGeneration, CoverStats, CoverDraft, UploadReceipt, PipelineJobSummary, SongDraft,
+  CoverGeneration, CoverStats, CoverDraft, UploadReceipt, PipelineJobSummary, SongDraft, ConfigStatus,
 } from "./types";
 
 const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
@@ -19,6 +19,9 @@ async function api<T>(path: string, init?: RequestInit): Promise<T> {
 
 // Health
 export const getHealth = () => api<{ status: string }>("/health");
+
+// Config
+export const getConfigStatus = () => api<ConfigStatus>("/config/status");
 
 // Cover catalog
 export const getCoverCatalog = (

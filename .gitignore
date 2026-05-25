@@ -39,6 +39,8 @@ storage/pipeline_jobs/
 storage/mock_audio/*_normalized.mp3
 storage/aarav/songs/*_draft.json
 storage/aarohi/songs/*_draft.json
+storage/aarav/songs/test_*.json
+storage/aarohi/songs/test_*.json
 storage/aarav/covers/
 storage/aarohi/covers/
 storage/aarav/uploads/

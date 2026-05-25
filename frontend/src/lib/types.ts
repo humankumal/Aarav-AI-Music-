@@ -128,6 +128,14 @@ export interface CoverDraft {
   };
 }
 
+export interface ConfigStatus {
+  credentials: Record<string, boolean>;
+  mock_mode: boolean;
+  environment: string;
+  require_human_approval: boolean;
+  all_required_set: boolean;
+}
+
 export interface UploadReceipt {
   job_id: string;
   artist_id: ArtistId;
