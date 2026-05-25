@@ -43,6 +43,9 @@
     "instagram": "📸 Instagram: {instagram_url}",
     "tiktok": "🎵 TikTok: {tiktok_url}"
   },
+  "cover_title_template": "{emotional_keyword} | {ai_song_title} | {artist_name} | Hindi {mood} Song {year}",
+  "cover_description_inspiration_line": "Born from the same emotional world as '{reference_title}' — reimagined through the soul of {ai_artist}",
+  "cover_forbidden_title_patterns": ["cover of", "cover version", "covers", "cover song"],
   "hashtag_groups": {
     "aarav_core": ["#AaravAIMusic", "#AaravAI", "#HindiAIMusic"],
     "aarohi_core": ["#AarohiAIMusic", "#AarohiAI", "#HindiAIFemale"],

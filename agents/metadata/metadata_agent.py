@@ -39,6 +39,9 @@ class MetadataAgent(BaseAgent):
         song_title = context.get("song_title") or (
             suggested_titles[0] if suggested_titles else "Untitled"
         )
+        cover_mode = bool(context.get("cover_mode"))
+        reference_song_title = context.get("reference_song_title", "")
+        reference_artist_name = context.get("reference_artist_name", "")
 
         if self._gemini:
             result = self._generate_via_gemini(
@@ -63,6 +66,17 @@ class MetadataAgent(BaseAgent):
                 language=language,
                 platform_target=platform_target,
                 duration_seconds=duration_seconds,
+            )
+
+        if cover_mode and reference_song_title:
+            result = self._apply_cover_overrides(
+                result=result,
+                artist_id=artist_id,
+                artist_config=artist_config,
+                song_title=song_title,
+                reference_song_title=reference_song_title,
+                reference_artist_name=reference_artist_name,
+                mood_tags=mood_tags,
             )
 
         result["seo_score"] = self._calculate_seo_score(result)
@@ -315,3 +329,52 @@ Generate JSON with this structure:
             score += 10
 
         return min(score, 100)
+
+    def _apply_cover_overrides(
+        self,
+        result: dict,
+        artist_id: str,
+        artist_config: dict,
+        song_title: str,
+        reference_song_title: str,
+        reference_artist_name: str,
+        mood_tags: list[str],
+    ) -> dict:
+        """Patch a metadata result with cover-mode title and description rules.
+
+        Cover titles must never name the reference song directly — only the
+        emotional world is acknowledged via the inspiration_line.
+        """
+        display_name = artist_config["display_name"]
+        primary_mood = mood_tags[0].title() if mood_tags else "Emotional"
+        emotional_keyword = self._pick_emotional_keyword(mood_tags)
+
+        cover_title = (
+            f"{emotional_keyword} | {song_title} | {display_name} | "
+            f"Hindi {primary_mood} Song {CURRENT_YEAR}"
+        )
+        if len(cover_title) > 100:
+            cover_title = f"{song_title} | {display_name} | Hindi {primary_mood} Song {CURRENT_YEAR}"
+
+        forbidden = self._seo_rules.get("cover_forbidden_title_patterns", [])
+        for pattern in forbidden:
+            if pattern.lower() in cover_title.lower():
+                cover_title = f"{song_title} | {display_name} | Hindi {primary_mood} Song {CURRENT_YEAR}"
+                break
+
+        inspiration_template = self._seo_rules.get(
+            "cover_description_inspiration_line",
+            "Born from the same emotional world as '{reference_title}' — reimagined through the soul of {ai_artist}",
+        )
+        inspiration_line = inspiration_template.format(
+            reference_title=reference_song_title,
+            ai_artist=display_name,
+        )
+
+        existing_desc = result.get("description", "")
+        result["title"] = cover_title
+        result["description"] = f"{inspiration_line}\n\n{existing_desc}"
+        result["cover_mode"] = True
+        result["reference_song_title"] = reference_song_title
+        result["reference_artist_name"] = reference_artist_name
+        return result

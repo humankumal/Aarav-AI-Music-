@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from agents.base_agent import AgentStatus
+from agents.cover_song import CoverSongAgent
 from agents.lyrics import LyricsAgent
 from agents.metadata import MetadataAgent
 from agents.music_prompt import MusicPromptAgent
@@ -45,6 +46,7 @@ class PipelineRunner:
         self._mock_mode = mock_mode
 
         # Phase 1 agents
+        self._cover_song_agent = CoverSongAgent(gemini_client=gemini_client)
         self._lyrics_agent = LyricsAgent(gemini_client=gemini_client)
         self._music_prompt_agent = MusicPromptAgent(gemini_client=gemini_client)
         self._metadata_agent = MetadataAgent(gemini_client=gemini_client)
@@ -389,6 +391,163 @@ class PipelineRunner:
             shorts_count=shorts_count,
         )
 
+    def run_cover(
+        self,
+        artist_id: str,
+        song_id: str,
+        catalog_type: str,
+        language: str | None = None,
+        emotion_intensity: int = 8,
+        publish_at: str | None = None,
+        shorts_count: int = 2,
+        job_id: str | None = None,
+    ) -> dict[str, Any]:
+        """Phase 1 cover pipeline: load catalog → CoverSongAgent → MusicPromptAgent
+        → MetadataAgent(cover_mode=True) → persist cover_generations record."""
+        job_id = job_id or str(uuid.uuid4())
+        started_at = datetime.now(timezone.utc).isoformat()
+
+        # Resolve catalog entry
+        song_entry = CoverSongAgent.load_song_from_catalog(song_id, catalog_type)
+        if not song_entry:
+            return {
+                "job_id": job_id,
+                "status": "failed",
+                "failed_step": "catalog_lookup",
+                "error": f"song_id '{song_id}' not found in '{catalog_type}' catalog",
+            }
+
+        reference_song_title = song_entry["title"]
+        reference_artist_name = song_entry["reference_artist_name"]
+        genre_tags = song_entry.get("genre_tags", [])
+
+        job_record = {
+            "job_id": job_id,
+            "artist_id": artist_id,
+            "song_id": song_id,
+            "catalog_type": catalog_type,
+            "reference_song_title": reference_song_title,
+            "reference_artist_name": reference_artist_name,
+            "status": "generating",
+            "current_step": "cover_lyrics",
+            "steps": {},
+            "error_log": [],
+            "started_at": started_at,
+        }
+        self._persist_job(job_record)
+        logger.info(f"[{job_id}] Cover pipeline starting | artist={artist_id} song_id={song_id}")
+
+        # ── Step 1: CoverSongAgent (lyrics) ───────────────────────────────────
+        cover_result = self._cover_song_agent.run(
+            artist_id=artist_id,
+            job_id=job_id,
+            context_payload={
+                "reference_song_title": reference_song_title,
+                "reference_artist_name": reference_artist_name,
+                "catalog_type": catalog_type,
+                "song_id": song_id,
+                "genre_tags": genre_tags,
+                "emotion_intensity": emotion_intensity,
+                "language": language,
+            },
+        )
+        job_record["steps"]["cover_lyrics"] = cover_result.to_dict()
+
+        if cover_result.status != AgentStatus.COMPLETED:
+            return self._fail_job(job_record, "cover_lyrics", cover_result.error)
+
+        cover_output = cover_result.result_payload
+        song_title = cover_output.get("suggested_titles", ["Untitled"])[0]
+        logger.info(f"[{job_id}] Cover lyrics complete | title='{song_title}'")
+
+        # ── Step 2: MusicPromptAgent ──────────────────────────────────────────
+        music_result = self._music_prompt_agent.run(
+            artist_id=artist_id,
+            job_id=job_id,
+            context_payload={
+                "lyrics_output": cover_output,
+                "platform_target": "lyria",
+            },
+        )
+        job_record["steps"]["music_prompt"] = music_result.to_dict()
+
+        if music_result.status != AgentStatus.COMPLETED:
+            return self._fail_job(job_record, "music_prompt", music_result.error)
+
+        music_prompt_output = music_result.result_payload
+
+        # ── Step 3: MetadataAgent (cover_mode=True) ───────────────────────────
+        metadata_result = self._metadata_agent.run(
+            artist_id=artist_id,
+            job_id=job_id,
+            context_payload={
+                "lyrics_output": cover_output,
+                "music_prompt_output": music_prompt_output,
+                "song_title": song_title,
+                "platform_target": "youtube",
+                "cover_mode": True,
+                "reference_song_title": reference_song_title,
+                "reference_artist_name": reference_artist_name,
+            },
+        )
+        job_record["steps"]["metadata"] = metadata_result.to_dict()
+
+        if metadata_result.status != AgentStatus.COMPLETED:
+            return self._fail_job(job_record, "metadata", metadata_result.error)
+
+        metadata_output = metadata_result.result_payload
+
+        # ── Persist cover_generations record ─────────────────────────────────
+        cover_gen_record = {
+            "song_id": song_id,
+            "artist_id": artist_id,
+            "catalog_type": catalog_type,
+            "reference_artist_name": reference_artist_name,
+            "reference_song_title": reference_song_title,
+            "status": "generating",
+            "job_id": job_id,
+            "created_at": started_at,
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+        }
+        self._persist_cover_generation(cover_gen_record)
+
+        # ── Finalize ──────────────────────────────────────────────────────────
+        job_record["status"] = "completed_phase1"
+        job_record["current_step"] = "awaiting_media_generation"
+        job_record["completed_at"] = datetime.now(timezone.utc).isoformat()
+        self._persist_job(job_record)
+
+        pipeline_output = {
+            "job_id": job_id,
+            "artist_id": artist_id,
+            "song_id": song_id,
+            "catalog_type": catalog_type,
+            "song_title": song_title,
+            "status": "phase1_complete",
+            "lyrics": cover_output,
+            "music_prompts": music_prompt_output,
+            "metadata": metadata_output,
+            "reference_song_title": reference_song_title,
+            "reference_artist_name": reference_artist_name,
+        }
+        self._persist_song_draft(artist_id, job_id, song_title, pipeline_output, subdir="covers")
+        logger.info(f"[{job_id}] Cover Phase 1 complete ✓")
+        return pipeline_output
+
+    def _persist_cover_generation(self, record: dict) -> None:
+        doc_id = f"{record['song_id']}_{record['artist_id']}"
+        if self._db:
+            try:
+                self._db.collection("cover_generations").document(doc_id).set(
+                    record, merge=True
+                )
+            except Exception as e:
+                logger.warning(f"Firestore cover_generations persist failed: {e}")
+        else:
+            path = Path("storage") / "cover_generations" / f"{doc_id}.json"
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(record, indent=2, ensure_ascii=False))
+
     def run_from_step(self, job_id: str, from_step: str = "publishing") -> dict[str, Any]:
         """Resume a pipeline from a specific step.  Used for approval-gate unblocking."""
         job_record = self._load_job(job_id)
@@ -490,6 +649,7 @@ class PipelineRunner:
         job_id: str,
         song_title: str,
         pipeline_output: dict,
+        subdir: str = "songs",
     ) -> None:
         if self._db:
             try:
@@ -513,6 +673,6 @@ class PipelineRunner:
             except Exception as e:
                 logger.warning(f"Firestore song draft persist failed: {e}")
         else:
-            out_path = Path("storage") / artist_id / "songs" / f"{job_id}_draft.json"
+            out_path = Path("storage") / artist_id / subdir / f"{job_id}_draft.json"
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(json.dumps(pipeline_output, indent=2, ensure_ascii=False))
