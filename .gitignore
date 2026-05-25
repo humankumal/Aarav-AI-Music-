@@ -34,6 +34,21 @@ storage/*/thumbnails/*.png
 # Keep draft JSON outputs in git for debugging
 !storage/**/*.json
 
+# Runtime smoke test artifacts — regenerated on every test run
+storage/pipeline_jobs/
+storage/mock_audio/*_normalized.mp3
+storage/aarav/songs/*_draft.json
+storage/aarohi/songs/*_draft.json
+storage/aarav/covers/
+storage/aarohi/covers/
+storage/aarav/uploads/
+storage/aarohi/uploads/
+storage/aarav/shorts/
+storage/aarohi/shorts/
+storage/approvals/
+storage/webhooks/
+storage/cover_generations/
+
 # IDE
 .idea/
 .vscode/

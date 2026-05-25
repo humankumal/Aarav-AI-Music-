@@ -1,6 +1,6 @@
 import type {
   ArtistId, CatalogType, CatalogPage, CoverRunResult,
-  CoverGeneration, CoverStats, CoverDraft, UploadReceipt, PipelineJobSummary,
+  CoverGeneration, CoverStats, CoverDraft, UploadReceipt, PipelineJobSummary, SongDraft,
 } from "./types";
 
 const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
@@ -87,6 +87,10 @@ export const listPipelineJobs = (artist_id?: ArtistId) => {
   const q = artist_id ? `?artist_id=${artist_id}` : "";
   return api<PipelineJobSummary[]>(`/pipeline/jobs${q}`);
 };
+
+// Songs
+export const listSongs = (artist_id: ArtistId) =>
+  api<SongDraft[]>(`/songs/${artist_id}`);
 
 // Uploads
 export const listUploads = (artist_id: ArtistId) =>

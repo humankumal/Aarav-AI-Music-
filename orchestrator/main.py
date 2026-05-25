@@ -175,6 +175,30 @@ def list_uploads(artist_id: str):
     return receipts
 
 
+@app.get("/songs/{artist_id}")
+def list_songs(
+    artist_id: str,
+    status: str | None = Query(default=None),
+) -> list[dict[str, Any]]:
+    """List original song drafts for an artist, newest first."""
+    songs_dir = Path("storage") / artist_id / "songs"
+    if not songs_dir.exists():
+        return []
+    records = []
+    for f in songs_dir.glob("*_draft.json"):
+        if f.name.startswith("test_"):
+            continue
+        try:
+            record = json.loads(f.read_text())
+            if status and record.get("status") != status:
+                continue
+            records.append(record)
+        except Exception:
+            pass
+    records.sort(key=lambda r: r.get("lyrics", {}).get("generated_at", ""), reverse=True)
+    return records
+
+
 @app.get("/pipeline/jobs")
 def list_pipeline_jobs(
     artist_id: str | None = Query(default=None),

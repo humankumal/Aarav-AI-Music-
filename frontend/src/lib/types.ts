@@ -64,6 +64,28 @@ export interface PipelineJob {
   error?: string;
 }
 
+export interface SongDraft {
+  job_id: string;
+  artist_id: ArtistId;
+  song_title: string;
+  status: string;
+  lyrics: {
+    lyrics_text: string;
+    hook_line: string;
+    mood_tags: string[];
+    suggested_titles: string[];
+    language_detected?: string;
+  };
+  metadata: {
+    title: string;
+    seo_score: number;
+    tags?: string[];
+  };
+  music_prompts?: {
+    lyria_prompt: string;
+  };
+}
+
 export interface PipelineJobSummary {
   job_id: string;
   artist_id: ArtistId;
