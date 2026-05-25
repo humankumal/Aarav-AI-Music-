@@ -175,6 +175,28 @@ def list_uploads(artist_id: str):
     return receipts
 
 
+@app.get("/pipeline/jobs")
+def list_pipeline_jobs(
+    artist_id: str | None = Query(default=None),
+    limit: int = Query(default=20, ge=1, le=100),
+) -> list[dict[str, Any]]:
+    """List recent pipeline jobs, newest first. Optionally filter by artist_id."""
+    jobs_dir = Path("storage") / "pipeline_jobs"
+    if not jobs_dir.exists():
+        return []
+    records = []
+    for f in jobs_dir.glob("*.json"):
+        try:
+            record = json.loads(f.read_text())
+            if artist_id and record.get("artist_id") != artist_id:
+                continue
+            records.append(record)
+        except Exception:
+            pass
+    records.sort(key=lambda r: r.get("started_at", ""), reverse=True)
+    return records[:limit]
+
+
 # ── Cover Song request models ─────────────────────────────────────────────────
 
 class CoverRunRequest(BaseModel):

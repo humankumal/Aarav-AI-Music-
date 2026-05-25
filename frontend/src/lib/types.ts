@@ -64,6 +64,17 @@ export interface PipelineJob {
   error?: string;
 }
 
+export interface PipelineJobSummary {
+  job_id: string;
+  artist_id: ArtistId;
+  status: string;
+  current_step: string;
+  started_at?: string;
+  completed_at?: string;
+  failed_at?: string;
+  error_log?: Array<{ step: string; error: string }>;
+}
+
 export interface CoverDraft {
   job_id: string;
   artist_id: ArtistId;
