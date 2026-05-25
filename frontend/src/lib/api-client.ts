@@ -1,6 +1,6 @@
 import type {
   ArtistId, CatalogType, CatalogPage, CoverRunResult,
-  CoverGeneration, CoverStats, UploadReceipt,
+  CoverGeneration, CoverStats, CoverDraft, UploadReceipt,
 } from "./types";
 
 const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
@@ -50,6 +50,9 @@ export const getGeneratedCovers = (artist_id: ArtistId, catalog_type?: CatalogTy
 };
 
 export const getCoverStats = () => api<CoverStats>("/covers/stats");
+
+export const getCoverDraft = (song_id: string, artist_id: ArtistId) =>
+  api<CoverDraft>(`/covers/${song_id}/draft?artist_id=${artist_id}`);
 
 // Approvals
 export const approveJob = (job_id: string, notes?: string) =>

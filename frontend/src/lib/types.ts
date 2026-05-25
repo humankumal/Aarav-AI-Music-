@@ -64,6 +64,37 @@ export interface PipelineJob {
   error?: string;
 }
 
+export interface CoverDraft {
+  job_id: string;
+  artist_id: ArtistId;
+  song_id: string;
+  catalog_type: CatalogType;
+  song_title: string;
+  status: string;
+  reference_song_title: string;
+  reference_artist_name: string;
+  lyrics: {
+    lyrics_text: string;
+    hook_line: string;
+    suggested_titles: string[];
+    mood_tags: string[];
+    emotional_anchors?: string[];
+    core_human_experience?: string;
+    language_detected?: string;
+    estimated_duration_seconds?: number;
+    lyrics_are_original?: boolean;
+  };
+  metadata: {
+    title: string;
+    description: string;
+    tags: string[];
+    hashtags: string[];
+    seo_score: number;
+    cover_mode?: boolean;
+    reference_song_title?: string;
+  };
+}
+
 export interface UploadReceipt {
   job_id: string;
   artist_id: ArtistId;

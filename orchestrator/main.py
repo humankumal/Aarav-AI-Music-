@@ -308,6 +308,26 @@ def get_cover_status(song_id: str, artist_id: str = Query(...)) -> dict[str, Any
     return json.loads(gen_path.read_text())
 
 
+@app.get("/covers/{song_id}/draft")
+def get_cover_draft(song_id: str, artist_id: str = Query(...)) -> dict[str, Any]:
+    """Return the full pipeline draft (lyrics, metadata, anchors) for a generated cover."""
+    gen_path = Path("storage") / "cover_generations" / f"{song_id}_{artist_id}.json"
+    if not gen_path.exists():
+        raise HTTPException(status_code=404, detail=f"No generation record for {song_id}/{artist_id}")
+
+    gen_record = json.loads(gen_path.read_text())
+    job_id = gen_record.get("job_id")
+    if not job_id:
+        raise HTTPException(status_code=404, detail="Generation record has no job_id")
+
+    covers_dir = Path("storage") / artist_id / "covers"
+    if covers_dir.exists():
+        for draft_file in covers_dir.glob(f"{job_id}_draft.json"):
+            return json.loads(draft_file.read_text())
+
+    raise HTTPException(status_code=404, detail=f"Draft file not found for job {job_id}")
+
+
 @app.get("/covers/{artist_id}/generated")
 def list_generated_covers(
     artist_id: str,
