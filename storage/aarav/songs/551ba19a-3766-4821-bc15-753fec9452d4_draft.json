@@ -1,5 +1,5 @@
 {
-  "job_id": "ee543f04-056a-4621-b993-029a62f7b626",
+  "job_id": "551ba19a-3766-4821-bc15-753fec9452d4",
   "artist_id": "aarav",
   "song_title": "Barsaat Mein Kho Gaya",
   "status": "phase1_complete",
@@ -20,7 +20,7 @@
     ],
     "estimated_duration_seconds": 215,
     "language_detected": "hinglish",
-    "theme": "heartbreak_rain",
+    "theme": "midnight_loneliness",
     "song_type": "full_song"
   },
   "music_prompts": {
