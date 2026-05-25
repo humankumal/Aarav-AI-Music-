@@ -1,0 +1,163 @@
+{
+  "job_id": "a133f3f1-d913-48ea-8a83-1e69a5e58081",
+  "artist_id": "aarav",
+  "song_id": "ng_001",
+  "catalog_type": "nepali",
+  "reference_song_title": "Euta Manche Ko",
+  "reference_artist_name": "Narayan Gopal",
+  "status": "completed_phase1",
+  "current_step": "awaiting_media_generation",
+  "steps": {
+    "cover_lyrics": {
+      "job_id": "a133f3f1-d913-48ea-8a83-1e69a5e58081",
+      "agent_name": "CoverSongAgent",
+      "artist_id": "aarav",
+      "status": "completed",
+      "result_payload": {
+        "lyrics_text": "[VERSE 1]\nRaat ke teen baje woh purani baatein yaad aati hain\nCigarette ka dhuan aur teri tasveer \u2014 bas itna hi bacha hai\nDono hath khali hain par dil bhar gaya hai\nTujhe bhulana chahta tha, tujhe hi yaad kar raha hoon\n\n[CHORUS]\nTeri yaad ek zakhm hai jo bhar nahi sakta\nTeri khamoshi ek awaaz hai jo sunai deti hai\nKya kahu tujhse, kya na kahu \u2014 sab kuch andhera hai\nBaarish mein bheeg ke bhi sukha nahi hoon main\n\n[VERSE 2]\nSheher ki roshniyan hain par ghar mein andhera hai\nTeri awaaz ka silsila ab khwabon mein hi hai\nJo tha woh gaya, jo hai woh tujh mein tha kabhi\nMeri tanhai ka ek naam tha \u2014 tera naam tha\n\n[BRIDGE]\nNa jaana tha itna \u2014 na paana tha itna\nPhir bhi yeh dil dhoondta hai tujhe har gali mein\nWoh pal jo the hamare \u2014 ab sirf mere hain\nAkela hoon main \u2014 par teri yaad meri hai",
+        "hook_line": "Teri yaad ek zakhm hai jo bhar nahi sakta",
+        "suggested_titles": [
+          "Teri Yaad",
+          "Teen Baje",
+          "Khamoshi Ki Awaaz"
+        ],
+        "mood_tags": [
+          "melancholic",
+          "longing",
+          "cinematic"
+        ],
+        "estimated_duration_seconds": 210,
+        "language_detected": "hinglish",
+        "song_type": "cover_inspired",
+        "reference_song_title": "Euta Manche Ko",
+        "reference_artist_name": "Narayan Gopal",
+        "catalog_type": "nepali",
+        "song_id": "ng_001",
+        "emotional_anchors": [
+          "heartbreak",
+          "memory",
+          "absence",
+          "longing"
+        ],
+        "core_human_experience": "The ache of loving someone you can no longer reach",
+        "lyrics_are_original": true
+      },
+      "error": null,
+      "duration_seconds": 0.00012848799997300375,
+      "metadata": {},
+      "completed_at": "2026-05-25T05:03:34.912138+00:00"
+    },
+    "music_prompt": {
+      "job_id": "a133f3f1-d913-48ea-8a83-1e69a5e58081",
+      "agent_name": "MusicPromptAgent",
+      "artist_id": "aarav",
+      "status": "completed",
+      "result_payload": {
+        "lyria_prompt": "Genre: dark cinematic Bollywood, emotional Hindi pop, lo-fi midnight, ambient trap soul. Vocals: warm raspy male voice, intimate emotional delivery, breathy and expressive, realistic imperfections. Instrumentation: sparse piano, fingerpicked acoustic guitar, deep 808 bass, orchestral string swells, vinyl crackle texture, atmospheric synth pads. Mood: melancholic, longing, cinematic. Key: D minor. Tempo: approximately 72 BPM. Production quality: professional, emotionally resonant, cinematic, commercially modern Hindi music.",
+        "negative_prompt": "no autotune robotics, no harsh distortion, no comedy tone, no upbeat club music, no explicit content, no EDM drops, no plagiarized melody from existing copyrighted songs",
+        "production_notes": {
+          "bpm_range": [
+            65,
+            80
+          ],
+          "key": "D minor",
+          "mood_tags": [
+            "melancholic",
+            "longing",
+            "cinematic"
+          ],
+          "instrumentation": "sparse piano, fingerpicked acoustic guitar, deep 808 bass, orchestral string swells, vinyl crackle texture, atmospheric synth pads"
+        },
+        "expected_genre_tags": [
+          "dark cinematic Bollywood",
+          "emotional Hindi pop",
+          "lo-fi midnight",
+          "ambient trap soul"
+        ],
+        "platform_target": "lyria"
+      },
+      "error": null,
+      "duration_seconds": 0.00010645899988048768,
+      "metadata": {},
+      "completed_at": "2026-05-25T05:03:34.912265+00:00"
+    },
+    "metadata": {
+      "job_id": "a133f3f1-d913-48ea-8a83-1e69a5e58081",
+      "agent_name": "MetadataAgent",
+      "artist_id": "aarav",
+      "status": "completed",
+      "result_payload": {
+        "title": "Dard | Teri Yaad | Aarav AI Music | Hindi Melancholic Song 2026",
+        "description": "Born from the same emotional world as 'Euta Manche Ko' \u2014 reimagined through the soul of Aarav AI Music\n\nTeri yaad ek zakhm hai jo bhar nahi sakta\n\nA new emotional journey from Aarav AI Music. 'Teri Yaad' is a cinematic hinglish song that touches the deepest corners of the heart.\n\nStream and experience the emotion \u2193\n\n0:00 Intro\n0:20 Verse\n1:05 Chorus\n1:50 Verse 2\n2:30 Chorus\n3:00 Outro\n\n\ud83d\udd14 Subscribe: \n\ud83c\udfb5 Spotify: Coming Soon\n\ud83d\udcf8 Instagram: https://instagram.com/aarav.ai.music\n\ud83c\udfb5 TikTok: https://tiktok.com/@AaravAIMusic\n\n\ud83e\udd16 This song is created using AI music generation tools. All creative direction, lyrics, emotional storytelling, and production guidance are curated by the Aarav AI Music team. #AIMusic #ArtificialIntelligence\n\n#AaravAIMusic #AaravAI #HindiAIMusic #HindiSadSong #BollywoodSad #EmotionalHindi #CinematicHindi #Heartbreak #LonelySong #MidnightVibes #RainSong #AIMusic #AIGenerated #ArtificialIntelligenceMusic #HindiMusic #IndianMusic #Bollywood #SadSong2026",
+        "tags": [
+          "aarav ai music",
+          "hindi sad song",
+          "ai music",
+          "emotional hindi song",
+          "hindi heartbreak song",
+          "cinematic hindi music",
+          "midnight song hindi",
+          "sad song 2026",
+          "hindi lo-fi",
+          "ai generated music hindi",
+          "teri yaad",
+          "teri yaad aarav ai music",
+          "new hindi song 2026",
+          "hindi melancholic song",
+          "hindi longing song",
+          "hindi cinematic song",
+          "dark cinematic bollywood",
+          "emotional hindi pop",
+          "lo-fi midnight"
+        ],
+        "hashtags": [
+          "#AaravAIMusic",
+          "#AaravAI",
+          "#HindiAIMusic",
+          "#HindiSadSong",
+          "#BollywoodSad",
+          "#EmotionalHindi",
+          "#CinematicHindi",
+          "#Heartbreak",
+          "#LonelySong",
+          "#MidnightVibes",
+          "#RainSong",
+          "#AIMusic",
+          "#AIGenerated",
+          "#ArtificialIntelligenceMusic",
+          "#HindiMusic",
+          "#IndianMusic",
+          "#Bollywood",
+          "#SadSong2026"
+        ],
+        "youtube_chapters": "0:00 Intro\n0:20 Verse\n1:05 Chorus\n1:50 Verse 2\n2:30 Chorus\n3:00 Outro",
+        "thumbnail_text": "Teri Yaad",
+        "platform_target": "youtube",
+        "language": "hinglish",
+        "spotify_metadata": {
+          "track_title": "Teri Yaad",
+          "artist": "Aarav AI Music",
+          "genre": "dark cinematic Bollywood",
+          "mood_tags": [
+            "melancholic",
+            "longing",
+            "cinematic"
+          ],
+          "language": "hinglish",
+          "explicit": false
+        },
+        "cover_mode": true,
+        "reference_song_title": "Euta Manche Ko",
+        "reference_artist_name": "Narayan Gopal",
+        "seo_score": 80
+      },
+      "error": null,
+      "duration_seconds": 0.00015107299986993894,
+      "metadata": {},
+      "completed_at": "2026-05-25T05:03:34.912434+00:00"
+    }
+  },
+  "error_log": [],
+  "started_at": "2026-05-25T05:03:34.911525+00:00",
+  "completed_at": "2026-05-25T05:03:34.912740+00:00"
+}

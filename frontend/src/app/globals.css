@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aarav-bg: #1a1a2e;
+  --aarohi-bg: #f5e6ca;
+}
+
+body {
+  background-color: #0f0f1a;
+  color: #f0f0f0;
+}

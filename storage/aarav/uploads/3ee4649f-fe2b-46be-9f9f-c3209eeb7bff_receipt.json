@@ -1,0 +1,16 @@
+{
+  "upload_id": "9d26d754-6505-4548-a4e3-d5a4a36291bd",
+  "job_id": "3ee4649f-fe2b-46be-9f9f-c3209eeb7bff",
+  "artist_id": "aarav",
+  "song_title": "Barsaat Mein Kho Gaya",
+  "platform": "youtube",
+  "video_id": "MOCK_3EE4649F",
+  "url": "https://www.youtube.com/watch?v=MOCK_3EE4649F",
+  "privacy_status": "private",
+  "publish_at": "2026-05-26T10:00:00.000Z",
+  "thumbnail_path": "storage/aarav/thumbnails/3ee4649f-fe2b-46be-9f9f-c3209eeb7bff_thumb.jpg",
+  "video_path": "storage/aarav/videos/3ee4649f-fe2b-46be-9f9f-c3209eeb7bff_lyric_video.mp4",
+  "metadata_title": "Dard | Barsaat Mein Kho Gaya | Aarav AI Music | Hindi Melancholic Song 2026",
+  "status": "scheduled",
+  "created_at": "2026-05-25T04:57:52.085957+00:00"
+}
