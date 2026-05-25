@@ -1,0 +1,149 @@
+{
+  "job_id": "e6e18212-ae2c-4722-8275-ec13952579ec",
+  "artist_id": "aarohi",
+  "status": "completed_phase1",
+  "current_step": "awaiting_media_generation",
+  "steps": {
+    "lyrics": {
+      "job_id": "e6e18212-ae2c-4722-8275-ec13952579ec",
+      "agent_name": "LyricsAgent",
+      "artist_id": "aarohi",
+      "status": "completed",
+      "result_payload": {
+        "lyrics_text": "[VERSE 1]\nSuraj ke pehle kiran se pehle,\nMain uthti hun, tujhe yaad karte.\nPhoolon ki mehk mein teri aawaz,\nKab aayega, main wait karti.\n\n[PRE-CHORUS]\nYe intezaar bhi ek dua hai,\nTujhse milne ki, tujhse milne ki...\n\n[CHORUS]\nTere liye ruk gayi hain saansein meri,\nPhir bhi chalti hain, phir bhi.\nTeri yaad mein dhalti hain roshni,\nPhir bhi jalti hain, phir bhi.\n\n[VERSE 2]\nNadi ke kinare baithe baithe,\nTeri parchhain dhundhti hun paani mein.\nYe khuli hawa jo chhu ke jaaye,\nLagta hai tu hi hai is kahaani mein.\n\n[PRE-CHORUS]\nYe intezaar bhi ek dua hai,\nTujhse milne ki, tujhse milne ki...\n\n[CHORUS]\nTere liye ruk gayi hain saansein meri,\nPhir bhi chalti hain, phir bhi.\nTeri yaad mein dhalti hain roshni,\nPhir bhi jalti hain, phir bhi.\n\n[BRIDGE]\nJo door hai woh paas bhi hai.\nJo kho gaya woh mila bhi hai.\nYahi to hai ishq ki reet...\n\n[FINAL CHORUS]\nTere liye ruk gayi hain saansein meri,\nPhir bhi chalti hain, phir bhi.\nTeri yaad mein dhalti hain roshni,\nPhir bhi jalti hain... phir bhi.\n\n[OUTRO]\nSuraj uthega kal bhi.\nAur main... main phir duaon mein tujhe dhundhuungi.",
+        "hook_line": "Tere liye ruk gayi hain saansein meri",
+        "suggested_titles": [
+          "Phir Bhi Chalti Hain",
+          "Teri Yaad Ki Roshni",
+          "Intezaar Ki Dua"
+        ],
+        "mood_tags": [
+          "longing",
+          "spiritual",
+          "healing",
+          "golden",
+          "feminine_strength"
+        ],
+        "estimated_duration_seconds": 220,
+        "language_detected": "hinglish",
+        "theme": "spiritual_longing",
+        "song_type": "full_song"
+      },
+      "error": null,
+      "duration_seconds": 0.0008672310000008565,
+      "metadata": {},
+      "completed_at": "2026-05-25T06:19:29.453528+00:00"
+    },
+    "music_prompt": {
+      "job_id": "e6e18212-ae2c-4722-8275-ec13952579ec",
+      "agent_name": "MusicPromptAgent",
+      "artist_id": "aarohi",
+      "status": "completed",
+      "result_payload": {
+        "lyria_prompt": "Genre: spiritual folk pop, cinematic Hindi female vocal, ambient devotional, dream pop, world music fusion. Vocals: airy ethereal female voice, emotional whisper to soar, expressive chorus, dreamy layered vocals. Instrumentation: delicate fingerpicked guitar, ethereal piano, bansuri flute, soft orchestral strings, ambient pads, light percussive heartbeats. Mood: longing, spiritual, healing, golden. Key: A minor. Tempo: approximately 75 BPM. Production quality: professional, emotionally resonant, cinematic, commercially modern Hindi music.",
+        "negative_prompt": "no autotune robotics, no harsh distortion, no comedy tone, no upbeat club music, no explicit content, no EDM drops, no plagiarized melody from existing copyrighted songs",
+        "production_notes": {
+          "bpm_range": [
+            68,
+            82
+          ],
+          "key": "A minor",
+          "mood_tags": [
+            "longing",
+            "spiritual",
+            "healing",
+            "golden",
+            "feminine_strength"
+          ],
+          "instrumentation": "delicate fingerpicked guitar, ethereal piano, bansuri flute, soft orchestral strings, ambient pads, light percussive heartbeats"
+        },
+        "expected_genre_tags": [
+          "spiritual folk pop",
+          "cinematic Hindi female vocal",
+          "ambient devotional",
+          "dream pop",
+          "world music fusion"
+        ],
+        "platform_target": "lyria"
+      },
+      "error": null,
+      "duration_seconds": 0.00010657400000013695,
+      "metadata": {},
+      "completed_at": "2026-05-25T06:19:29.453657+00:00"
+    },
+    "metadata": {
+      "job_id": "e6e18212-ae2c-4722-8275-ec13952579ec",
+      "agent_name": "MetadataAgent",
+      "artist_id": "aarohi",
+      "status": "completed",
+      "result_payload": {
+        "title": "Intezaar | Phir Bhi Chalti Hain | Aarohi AI Music | Hindi Longing Song 2026",
+        "description": "Tere liye ruk gayi hain saansein meri\n\nA new emotional journey from Aarohi AI Music. 'Phir Bhi Chalti Hain' is a cinematic hinglish song that touches the deepest corners of the heart.\n\nStream and experience the emotion \u2193\n\n0:00 Intro\n0:20 Verse\n1:05 Chorus\n1:50 Verse 2\n2:30 Chorus\n3:00 Outro\n\n\ud83d\udd14 Subscribe: \n\ud83c\udfb5 Spotify: Coming Soon\n\ud83d\udcf8 Instagram: https://instagram.com/aarohi.ai.music\n\ud83c\udfb5 TikTok: https://tiktok.com/@AarohiAIMusic\n\n\ud83e\udd16 This song is created using AI music generation tools. All creative direction, lyrics, emotional storytelling, and production guidance are curated by the Aarav AI Music team. #AIMusic #ArtificialIntelligence\n\n#AarohiAIMusic #AarohiAI #HindiAIFemale #HindiSadSong #BollywoodSad #EmotionalHindi #CinematicHindi #Heartbreak #LonelySong #MidnightVibes #RainSong #AIMusic #AIGenerated #ArtificialIntelligenceMusic #HindiMusic #IndianMusic #Bollywood #SadSong2026",
+        "tags": [
+          "aarohi ai music",
+          "hindi emotional song",
+          "ai music female",
+          "spiritual hindi song",
+          "healing hindi music",
+          "female voice hindi sad song",
+          "cinematic hindi female vocal",
+          "emotional song 2026",
+          "hindi devotional pop",
+          "ai generated female voice hindi",
+          "phir bhi chalti hain",
+          "phir bhi chalti hain aarohi ai music",
+          "new hindi song 2026",
+          "hindi longing song",
+          "hindi spiritual song",
+          "hindi healing song",
+          "spiritual folk pop",
+          "ambient devotional"
+        ],
+        "hashtags": [
+          "#AarohiAIMusic",
+          "#AarohiAI",
+          "#HindiAIFemale",
+          "#HindiSadSong",
+          "#BollywoodSad",
+          "#EmotionalHindi",
+          "#CinematicHindi",
+          "#Heartbreak",
+          "#LonelySong",
+          "#MidnightVibes",
+          "#RainSong",
+          "#AIMusic",
+          "#AIGenerated",
+          "#ArtificialIntelligenceMusic",
+          "#HindiMusic",
+          "#IndianMusic",
+          "#Bollywood",
+          "#SadSong2026"
+        ],
+        "youtube_chapters": "0:00 Intro\n0:20 Verse\n1:05 Chorus\n1:50 Verse 2\n2:30 Chorus\n3:00 Outro",
+        "thumbnail_text": "Phir Bhi Chalti Hain",
+        "platform_target": "youtube",
+        "language": "hinglish",
+        "spotify_metadata": {
+          "track_title": "Phir Bhi Chalti Hain",
+          "artist": "Aarohi AI Music",
+          "genre": "spiritual folk pop",
+          "mood_tags": [
+            "longing",
+            "spiritual",
+            "healing"
+          ],
+          "language": "hinglish",
+          "explicit": false
+        },
+        "seo_score": 80
+      },
+      "error": null,
+      "duration_seconds": 0.00011238099997967765,
+      "metadata": {},
+      "completed_at": "2026-05-25T06:19:29.453783+00:00"
+    }
+  },
+  "error_log": [],
+  "started_at": "2026-05-25T06:19:29.452212+00:00",
+  "completed_at": "2026-05-25T06:19:29.453790+00:00"
+}
